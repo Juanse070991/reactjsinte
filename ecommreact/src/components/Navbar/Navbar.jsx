@@ -2,10 +2,11 @@ import { useSelector, useDispatch } from 'react-redux';
 import * as userActions from '../../redux/user/user-actions';
 import { motion } from 'framer-motion';
 import { Link, useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
 
-import { FaUserAlt } from 'react-icons/fa';
+import { FaUserAlt,FaBars, FaTimes } from 'react-icons/fa';
 import { HiHome } from 'react-icons/hi';
-import { BiMenu } from "react-icons/bi";
+
 
 import ModalCart from './ModalCart/ModalCart';
 import ModalUser from './ModalUser/ModalUser';
@@ -20,12 +21,22 @@ import {
   UserContainerStyled,
   SpanStyled,
   UserImageStyled,
+  MobileIcon,
+  Wrapper,
+  LogoContainer,
+  Menu,
+  MenuItem,
+  MenuItemLink,
 } from './NavbarStyles';
 
 
 
 function Navbar() {
+ 
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
+
   const currentUser = useSelector(state => state.user.currentUser);
+
 
   const dispatch = useDispatch();
 
@@ -33,17 +44,26 @@ function Navbar() {
 
   return (
     <NavbarContainerStyled>
+      <Wrapper>
       <ModalCart />
       <ModalUser />
-      <div>
+      
+        <LogoContainer>
         <Link to='/'>
           <img
             src='https://res.cloudinary.com/ddfzor3mh/image/upload/c_scale,e_boomerang,w_100/v1678315084/BoomSonic_y71f6k.jpg'
             alt='Logo'
           />
         </Link>
-      </div>
+        </LogoContainer>
+        <MobileIcon onClick={() => setShowMobileMenu(!showMobileMenu)}>
+            {showMobileMenu ? <FaTimes /> : <FaBars />}
+          </MobileIcon>
+
       <LinksContainerStyled>
+      <Menu open={showMobileMenu}>
+        <MenuItem>
+          <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)} to='/'>
         <motion.div whileTap={{ scale: 0.97 }}>
           <Link to='/'>
             <LinkContainerStyled home>
@@ -52,11 +72,17 @@ function Navbar() {
             Home
           </Link>
         </motion.div>
-
+        </MenuItemLink>
+        </MenuItem>
+        <MenuItem>
+          <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)} to='/'>
         <CartNavStyled>
           <CartIcon />
         </CartNavStyled>
-
+        </MenuItemLink>
+        </MenuItem>
+        <MenuItem>
+          <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)} to='/'>
         <UserNavStyled>
           <UserContainerStyled
             onClick={() =>
@@ -75,8 +101,11 @@ function Navbar() {
             )}
           </UserContainerStyled>
         </UserNavStyled>
+        </MenuItemLink>
+        </MenuItem>
+        </Menu>
       </LinksContainerStyled>
-     
+      </Wrapper>
     </NavbarContainerStyled>
   );
 }

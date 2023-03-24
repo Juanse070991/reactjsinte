@@ -12,9 +12,9 @@ export const CategoriasContainer = styled.div`
   gap: 20px;
   user-select: none;
 
-  @media (max-width:768px){
+  @media (min-width: 769px) and (max-width: 1024px){
     display:flex;
-    flex-direction:column;
+    flex-wrap: wrap;
     justify-content: center;
     alig-items: center;
     height:100%;
@@ -56,7 +56,7 @@ export const CardCategoria = styled(motion.div)`
     }
   }
 
-  @media (max-width:768px){
+  @media (min-width: 769px) and (max-width: 1024px){
     display:flex;
     flex-direction:column;
     justify-content: center;

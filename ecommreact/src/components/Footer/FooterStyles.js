@@ -9,6 +9,10 @@ export const FooterContainerStyled = styled.footer`
   img {
     border-radius: 5px;
   }
+
+  @media screen and (max-width: 960px){
+    flex-direction: column;
+  }
 `;
 
 export const LinksContainerStyled = styled.div`
@@ -30,6 +34,16 @@ export const TarjetasCreditoStyled = styled.div`
   export const ContactoStyled = styled.div`
   display: flex;
   flex-direction:column;
+
+  @media screen and (max-width: 960px){
+    flex-direction: row;
+    gap: 15px;
+  }
+  @media screen and (max-width: 768px){
+    flex-direction: column;
+    gap: 15px;
+  }
+
 
   `;
 

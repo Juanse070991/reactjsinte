@@ -25,7 +25,7 @@ function Home() {
 
   return (
     <HomeWrapper>
-      {/* Hero Section */}
+      
 
       <Hero doScroll={doScroll} />
 
@@ -37,7 +37,7 @@ function Home() {
 
       {/* Categorias Section */}
       <CategoriasWrapper>
-        <h2>Busca en nuestra seccion de instrumentos</h2>
+        <h2>Busca por Categorias</h2>
         <Categorias />
       </CategoriasWrapper>
 

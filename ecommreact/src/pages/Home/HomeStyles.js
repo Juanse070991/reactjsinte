@@ -11,6 +11,11 @@ export const HomeWrapper = styled.div`
     font-weight: 800;
     margin-left: 10px;
   }
+  @media (min-width: 769px) and (max-width: 1024px){
+    max-width:1024px;
+    width: 100vh;
+    margin: 0 auto;
+     }
 `;
 
 export const CategoriasWrapper = styled.section`
@@ -27,6 +32,8 @@ export const CategoriasWrapper = styled.section`
     justify-content: center;
     color: white;
   }
+
+ 
 `;
 
 export const ProductosWrapper = styled.section`
@@ -43,6 +50,12 @@ export const ProductosWrapper = styled.section`
     display: flex;
     justify-content: center;
   }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px){
+  width:100%;
+  justify-content:center;
+  align-itmes:center;
   }
 `;
 

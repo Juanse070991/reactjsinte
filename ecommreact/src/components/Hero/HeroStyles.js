@@ -9,7 +9,9 @@ export const HeroContainerStyled = styled.div`
   h1 {
     margin-bottom: 2rem;
   }
-  @media (max-width: 768px){
+  @media (min-width: 769px) and (max-width: 1024px){
+    max-width:1024px;
+    width: 100vh;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -18,9 +20,10 @@ export const HeroContainerStyled = styled.div`
       font-size: 1.2rem;
     }
     img{
-      width:300px;
-      height: 150px;
+      width:100%;
+      height: 200px;
       margin-top:20px;
+      
     }
   }
 
@@ -47,9 +50,7 @@ export const IconWrapperStyled = styled.div`
   top: 12px;
   left: 12px;
   font-size: 1.1rem;
-  @media (max-width: 768px) {
-    display:none;
-  }
+
 `;
 
 export const HeroBtnStyled = styled.input`

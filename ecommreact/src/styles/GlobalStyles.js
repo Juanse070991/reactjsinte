@@ -37,6 +37,7 @@ body {
     background:url(https://res.cloudinary.com/dpxe6utid/image/upload/v1668126872/drinksCo/cardbacknegro_xg0oac.jpg);
     color: wheat;
     font-family: var(--fontroboto);
+    width: 100%;
  
     
   
@@ -66,11 +67,17 @@ export const GlobalStyles = createGlobalStyle`
     body {
     margin: 0;
     padding: 0;
+    box-size: border-box;
     background-image: url("https://res.cloudinary.com/ddfzor3mh/image/upload/v1678569126/fondo-de-la-estrella-del-rock-de-grunge-45215083_ayj77m.jpg");
     font-family: 'Montserrat', sans-serif;
     color: white;
     -webkit-tap-highlight-color: transparent;
     overflow-x: hidden
+    @media (min-width: 769px) and (max-width: 1024px){
+      max-width: 480px;
+      width: 480px;
+       }
+    
     }
     a {
     text-decoration: none;
@@ -81,4 +88,6 @@ export const GlobalStyles = createGlobalStyle`
     li {
     list-style: none;
     }
+
+    
 `;
