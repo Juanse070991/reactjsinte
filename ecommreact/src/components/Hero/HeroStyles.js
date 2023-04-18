@@ -26,6 +26,23 @@ export const HeroContainerStyled = styled.div`
       
     }
   }
+  @media (min-width: 481px) and (max-width: 768px){
+    max-width:768px;
+    width: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+      font-size: 1.2rem;
+    }
+    img{
+      width:100%;
+      height: 80%;
+      margin-top:20px;
+      
+    }
+  }
 
 `;
 

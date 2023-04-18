@@ -72,12 +72,10 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
     color: white;
     -webkit-tap-highlight-color: transparent;
-    overflow-x: hidden
-    @media (min-width: 769px) and (max-width: 1024px){
-      max-width: 480px;
-      width: 480px;
-       }
-    
+    overflow-x: hidden 
+    @media (min-width: 481px) and  (max-width: 768px){
+      width: 768px;
+      }
     }
     a {
     text-decoration: none;

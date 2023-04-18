@@ -19,6 +19,14 @@ export const CategoriasContainer = styled.div`
     alig-items: center;
     height:100%;
   }
+  @media (min-width: 481px) and (max-width: 768px){
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    alig-items: center;
+    height:100%;
+  }
+  
 `;
 
 export const CardCategoria = styled(motion.div)`

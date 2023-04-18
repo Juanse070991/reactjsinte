@@ -1,7 +1,7 @@
 import React from 'react';
 import { formatPrice } from '../../../utils';
 
-import CardProductCheckout from '../../CardProductCheckout/CardProductCheckout';
+import card_product_checkout from '../../CardProductCheckout/card_product_checkout';
 import Link from '../../UI/Link/Link';
 
 import {

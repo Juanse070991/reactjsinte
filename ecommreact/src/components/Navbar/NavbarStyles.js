@@ -17,7 +17,7 @@ export const NavbarContainerStyled = styled.div`
     }
     @media (min-width: 481px) and (max-width: 768px) {
       max-width: 768px;
-      width: 100%;
+      width: 100vh;
       height: 100px;
       flex-direction: column;
       align-items: ;
@@ -48,6 +48,7 @@ align-items:center;
 justify-content: space-between;
 margin: auto;
 
+
 `;
  
 export const LogoContainer = styled.div`
@@ -60,9 +61,7 @@ font-size: 1.2rem;
 
 
 export const LinksContainerStyled = styled.div`
-
 color: white;
-  
 display: flex;
 justify-content: center;
 align-items: center;
@@ -91,7 +90,7 @@ list-style: none;
 
 
 @media screen and (max-width: 960px) {
-  background: black;
+  background:black;
   position: absolute;
   top: 70px;
   left: ${({ open }) => (open ? "0" : "-100%" )};
@@ -101,6 +100,10 @@ list-style: none;
   flex-direction:column;
   align-items: center;
   transition: 0.5s all easy;
+}
+@media (min-width: 481px) and (max-width: 768px){
+  background: black;
+  
 }
 `;
 
@@ -147,6 +150,7 @@ export const MobileIcon = styled.div`
   @media screen and (max-width: 960px) {
     display: flex;
     align-items: center;
+    justify-content: end;
     cursor: pointer;
     font-size: 2rem;
     color:red;

@@ -14,11 +14,11 @@ import {
   ProductTitleStyled,
   TextStyled,
   QuantityContainerStyled,
-} from './CardProductCheckoutStyles';
+} from './card_product_checkout_styles';
 import * as cartActions from '../../redux/cart/cart-actions';
 import { useDispatch } from 'react-redux';
 
-const CardProductCheckout = ({ img, price, title, id, desc, quantity }) => {
+const card_product_checkout = ({ img, price, title, id, desc, quantity }) => {
   const dispatch = useDispatch();
   return (
     <CardContainerStyled>
@@ -48,4 +48,4 @@ const CardProductCheckout = ({ img, price, title, id, desc, quantity }) => {
   );
 };
 
-export default CardProductCheckout;
+export default card_product_checkout;
