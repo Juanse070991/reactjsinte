@@ -8,7 +8,9 @@ export const ProductosContainer = styled.div`
   row-gap: 3.5rem;
   width: 100%;
   padding: 1rem 0;
+  
   }
+
 `;
 
 export const ProductosCard = styled.div`

@@ -16,10 +16,19 @@ export const ContainerStyled = styled(motion.div)`
   background-color: rgb(0, 0, 0);
   border-radius: 0 0 0 1rem;
   box-shadow: 0 0 50px 20px rgba(259,21,0, 0.4);
+
+  @media screen and (min-width: 320px) and (max-width: 1024px) {
+    width: 95%;
+    height: calc(100vh - 4rem);
+   
+  }
 `;
 
 export const CloseButtonContainerStyled = styled.div`
   height: 32px;
+  @media only screen and (min-width: 324px) and (max-width: 1240px) {
+    margin-left: 1rem;
+  }
 `;
 
 export const CloseButtonStyled = styled(motion.button)`
@@ -34,6 +43,7 @@ export const CloseButtonStyled = styled(motion.button)`
  background: linear-gradient(83deg, rgba(250,250,250,0.9), rgb(209, 21, 6));
   color: white;
   cursor: pointer;
+  
 `;
 
 export const TitleStyled = styled.div`
@@ -44,10 +54,19 @@ export const TitleStyled = styled.div`
   & h1 {
     margin-top: 0;
   }
+  @media only screen and (min-width: 324px) and (max-width: 1024px) {
+  h1{
+    font-size:1rem;
+  }
+  }
 `;
 
 export const MainContainerStyled = styled.div`
   height: 55%;
+  @media only screen and (min-width: 324px) and (max-width: 1024px) {
+   width:85%;
+   margin-left: 2rem;
+    }
 `;
 
 export const ProductsWrapperStyled = styled.div`
@@ -74,6 +93,7 @@ export const ProductsWrapperStyled = styled.div`
 
 export const ProductContainerStyled = styled.div`
   display: flex;
+  flex-direction:row;
   justify-content: space-between;
   align-items: center;
   gap: 15px;
@@ -89,6 +109,11 @@ export const ProductContainerStyled = styled.div`
     border-radius: 16px;
     object-fit: cover;
   }
+  @media only screen and (min-width: 324px) and (max-width: 768px) {
+    width: 70%;
+    flex-direction:column;
+    align-items: center;
+  }
 `;
 
 export const TextContainerStyled = styled.div`
@@ -102,12 +127,23 @@ export const CardTitleStyled = styled.h3`
   margin: 0;
   margin-bottom: 2px;
   font-weight: 500;
+  @media only screen and (max-width: 624px) and (max-width: 768px) {
+    font-size: 1rem;
+    text-align: center;
+    background-color: red;
+    width: 100%; 
+    border-radius:3px;
+
+  }
 `;
 
 export const TextStyled = styled.p`
   margin: 0;
   color: #666;
   font-size: 1rem;
+  @media only screen and (min-width: 324px) and (max-width: 1240px) {
+    display: none;
+  }
 `;
 
 export const PriceStyled = styled.span`
@@ -116,6 +152,11 @@ export const PriceStyled = styled.span`
   background: linear-gradient(83deg, rgba(250,250,250,0.9), rgb(209, 21, 6));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media only screen and (min-width: 324px) and (max-width: 768px) {
+    margin-left: 1.7rem; 
+  }a
+  
 `;
 
 export const PriceContainerStyled = styled.div`
@@ -124,6 +165,12 @@ export const PriceContainerStyled = styled.div`
   & p {
     text-align: center;
     margin-bottom: 0;
+  }
+  
+  @media only screen and (min-width: 324px) and (max-width: 1240px) {
+    p{
+      margin-left: 2rem;
+    }
   }
 `;
 

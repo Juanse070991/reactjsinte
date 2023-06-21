@@ -42,7 +42,7 @@ const Hero = ({ doScroll }) => {
   return (
     <HeroContainerStyled>
       <div>
-        <h1 className='title'>¿Qué equipo estás buscando?</h1>
+      <h1 className='title'>¿Qué equipo estás buscando?</h1>
         <HeroFormStyled>
           <HeroSearchBarStyled
             value={value}

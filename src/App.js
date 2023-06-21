@@ -26,6 +26,7 @@ function onAuthStateChange(cb, action) {
 }
 
 function App() {
+
   const dispatch = useDispatch();
 
   useEffect(() => {

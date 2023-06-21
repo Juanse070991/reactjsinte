@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 export const ModalContainerStyled = styled(motion.div)`
   position: absolute;
-  background-color: rgb(209, 21, 6);
-  border: 3px solid white;
+  background-color: rgb(188, 21, 1);
+  border: 3px solid rgb(888, 11, 1);
   box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.3);
   width: 450px;
   top: 100px;
@@ -22,11 +22,9 @@ export const ModalContainerStyled = styled(motion.div)`
     }
   }
 
-  @media screen and (max-width: 480px){
-    width: 150px;
-    top: 50px;
-
-    }
+  @media screen and (min-width: 320px) and (max-width: 1240px){
+    width: 130px;
+  }
 `;
 
 export const LinkStyled = styled(Link)`
@@ -35,11 +33,20 @@ export const LinkStyled = styled(Link)`
     color: black;
     font-weight: 600;
   }
+  @media screen and (min-width: 320px) and (max-width: 1240px){
+    font-size: 1.1rem;
+    font-weight: 400px;
+  }
+
 `;
 
 export const UsernameStyled = styled.h2`
   font-weight: 600;
   color: black;
+  @media screen and (min-width: 320px) and (max-width: 1240px){
+    font-size: 1.1rem;
+    font-weight: 400px;
+  }
 `;
 
 export const HrStyled = styled.hr`

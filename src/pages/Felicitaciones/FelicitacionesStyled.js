@@ -8,7 +8,7 @@ export const TextStyled = styled.div`
   align-items: center;
   height: calc(70vh - 100px);
   background: rgba(0,1,1, 0.6);
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 `;
 
@@ -30,4 +30,6 @@ export const PatternStyled = styled.img`
   position: fixed;
   z-index: -100000000;
   bottom: -80px;
+  
+ 
 `;

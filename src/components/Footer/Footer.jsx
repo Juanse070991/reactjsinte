@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaInstagramSquare, FaGithubSquare, FaCcVisa, FaCcAmex, FaPhoneAlt, FaEnvelope, FaWhatsapp ,FaTwitter} from "react-icons/fa";
 
-import { FooterContainerStyled, LinksContainerStyled , TarjetasCreditoStyled, ContactoStyled } from './FooterStyles';
+import { FooterContainerStyled, LinksContainerStyled , TarjetasCreditoStyled, ContactoStyled,LogoContainer } from './FooterStyles';
 
 const Footer = () => {
   return (
@@ -31,8 +31,11 @@ const Footer = () => {
          <span><FaCcAmex fontSize="2rem"/></span>
          <span></span>
       </TarjetasCreditoStyled>
+      <LogoContainer>
          <span><img src='https://res.cloudinary.com/ddfzor3mh/image/upload/c_scale,e_boomerang,w_80/v1678315084/BoomSonic_y71f6k.jpg'></img></span>
-    </FooterContainerStyled>
+      </LogoContainer>  
+      
+         </FooterContainerStyled>
   );
 };
 

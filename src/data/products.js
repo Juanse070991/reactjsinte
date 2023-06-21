@@ -1,8 +1,10 @@
+
+
 export const products = [
   {
     id: 1,
     title:'Yamaha rbx270',
-    img: 'https://res.cloudinary.com/ddfzor3mh/image/upload/c_scale,e_boomerang,h_1600,w_800/v1678315086/yamaha-rbx270j_ynrx7r.jpg',
+    img: 'https://res.cloudinary.com/ddfzor3mh/image/upload/c_scale,e_boomerang,h_600,w_800/v1678315086/yamaha-rbx270j_ynrx7r.jpg',
     desc: 'sasasasasas',
     price: '129500',
     category: 'guitarra',
@@ -10,7 +12,7 @@ export const products = [
   {
     id: 2,
     title: 'sgr-shecter c-5',
-    img: 'https://res.cloudinary.com/ddfzor3mh/image/upload/c_scale,e_boomerang,h_1600,w_800/v1678315086/sgr-shecter-c-5_vgaii2.jpg',
+    img: 'https://res.cloudinary.com/ddfzor3mh/image/upload/c_scale,e_boomerang,h_600,w_800/v1678315086/sgr-shecter-c-5_vgaii2.jpg',
     desc:'patada al pecho',
     price: '200000',
     category: 'guitarra',
@@ -18,7 +20,7 @@ export const products = [
   {
     id: 3,
     title:'Schecter Stiletto',
-    img: 'https://res.cloudinary.com/ddfzor3mh/image/upload/v1678315086/schecter-stiletto-extreme-4_lav1ju.webp',
+    img: 'https://res.cloudinary.com/ddfzor3mh/image/upload/c_scale,h_600,w_800/v1678315086/schecter-stiletto-extreme-4_lav1ju.jpg',
     desc: 'descontrolado',
     price: '282000',
     category: 'guitarra',
@@ -26,7 +28,7 @@ export const products = [
   {
     id: 4,
     title:'Kramer nite-v_s3',
-    img: 'https://res.cloudinary.com/ddfzor3mh/image/upload/c_scale,e_boomerang,h_1600,w_800/v1678315086/kramer-nite-v_s3gmgr.jpg',
+    img: 'https://res.cloudinary.com/ddfzor3mh/image/upload/c_scale,e_boomerang,h_600,w_800/v1678315086/kramer-nite-v_s3gmgr.jpg',
     desc: 'es pal viernes',
     price: '160000',
     category: 'guitarra',
@@ -34,7 +36,7 @@ export const products = [
   {
     id: 5,
     title:'Jackson v-t40jyz',
-    img: 'https://res.cloudinary.com/ddfzor3mh/image/upload/c_scale,e_boomerang,h_1600,w_800/v1678315086/jackson-v_t40jyz.jpg',
+    img: 'https://res.cloudinary.com/ddfzor3mh/image/upload/c_scale,e_boomerang,h_600,w_800/v1678315086/jackson-v_t40jyz.jpg',
     desc: 'glamour',
     price: '12500',
     category: 'guitarra', 
@@ -42,7 +44,7 @@ export const products = [
   {
     id: 6,
     title:'Ibanez JEM.JR',
-    img: 'https://res.cloudinary.com/ddfzor3mh/image/upload/c_scale,e_boomerang,h_1600,w_800/v1678315085/Ibanez-JEM-JR-Steve-Vai-Signature-Electric-Guitar-White-1_uqwems.jpg',
+    img: 'https://res.cloudinary.com/ddfzor3mh/image/upload/c_scale,e_boomerang,h_600,w_800/v1678315085/Ibanez-JEM-JR-Steve-Vai-Signature-Electric-Guitar-White-1_uqwems.jpg',
     desc: 're gedeeee',
     price: '60000',
     category: 'guitarra',
@@ -50,7 +52,7 @@ export const products = [
   {
     id: 7,
     title:'Ibanez sr305eb',
-    img: 'https://res.cloudinary.com/ddfzor3mh/image/upload/c_scale,e_boomerang,h_1600,w_800/v1678315085/ibanez-sr305eb-wk_bnhjzo.jpg',
+    img: 'https://res.cloudinary.com/ddfzor3mh/image/upload/c_scale,e_boomerang,h_600,w_800/v1678315085/ibanez-sr305eb-wk_bnhjzo.jpg',
     desc: 'bacan',
     price: '40000',
     category: 'guitarra',
@@ -58,7 +60,7 @@ export const products = [
   {
     id: 8,
     title:'Fender Stratocaster',
-    img: 'https://res.cloudinary.com/ddfzor3mh/image/upload/c_scale,e_boomerang,h_1600,w_800/v1678315085/fender-stratocaster_ar3wkz.jpg',
+    img: 'https://res.cloudinary.com/ddfzor3mh/image/upload/c_scale,e_boomerang,h_600,w_800/v1678315085/fender-stratocaster_ar3wkz.jpg',
     desc: 'de la gorra',
     price: '55000',
     category: 'guitarra',
@@ -89,8 +91,8 @@ export const products = [
   },
   {
     id: 12,
-    title:'Yamaha Sonogenic',
-    img: 'https://res.cloudinary.com/ddfzor3mh/image/upload/c_scale,e_boomerang,h_450,w_650/v1678315086/yamaha-sonogenic-shs500rd_wwjka6.jpg',
+    title:'Yamaha somegenic',
+    img: 'https://res.cloudinary.com/ddfzor3mh/image/upload/c_scale,e_boomerang,h_600,w_800/v1678315086/yamaha-sonogenic-shs500rd_wwjka6.jpg',
     desc: 'resaca de mono',
     price: '100000',
     category: 'organo',

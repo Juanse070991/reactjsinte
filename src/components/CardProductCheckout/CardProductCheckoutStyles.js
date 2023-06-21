@@ -16,7 +16,15 @@ export const CardContainerStyled = styled.div`
     border-radius: 16px;
     object-fit: cover;
   }
-`;
+  @media screen and (min-width: 324px) and (max-width: 1024px){
+  flex-direction: column;
+  justify-content:center;
+  border:3px solid white;
+  background:black;
+  border-radius:25px;
+  margin-top: 10px;
+  }
+  `;
 
 export const CardInfoStyled = styled.div`
   display: flex;

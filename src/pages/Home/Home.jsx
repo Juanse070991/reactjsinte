@@ -29,19 +29,19 @@ function Home() {
 
       <Hero doScroll={doScroll} />
 
-      {/* Recomendados Section */}
+      
       <RecomendadosWrapper>
         <h2>Los mas pedidos!</h2>
         <CardsRecomendacion />
       </RecomendadosWrapper>
 
-      {/* Categorias Section */}
+     
       <CategoriasWrapper>
         <h2>Busca por Categorias</h2>
         <Categorias />
       </CategoriasWrapper>
 
-      {/* Populares Section*/}
+     
       <ProductosWrapper ref={productsRef}>
         <h2>Nuestros productos</h2>
         <CardsProductos />

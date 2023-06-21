@@ -10,19 +10,7 @@ export const NavbarContainerStyled = styled.div`
   align-items: center;
   padding: 1rem 4rem;
 
-  @media (min-width: 769px) and (max-width: 1024px){
-    max-width: 1024px;
-    width:100%;
-   justify-content: center;
-    }
-    @media (min-width: 481px) and (max-width: 768px) {
-      max-width: 768px;
-      width: 100vh;
-      height: 100px;
-      flex-direction: column;
-      align-items: ;
-    }
-
+  
 `;
 
 export const ModalOverlayStyled = styled(motion.div)`
@@ -37,6 +25,7 @@ export const ModalOverlayStyled = styled(motion.div)`
     css`
       backdrop-filter: blur(4px);
     `}
+    
 `;
 
 export const Wrapper = styled.div`
@@ -46,9 +35,7 @@ display: flex;
 flex-directon: row;
 align-items:center;
 justify-content: space-between;
-margin: auto;
-
-
+margin: 20px auto;
 `;
  
 export const LogoContainer = styled.div`
@@ -77,7 +64,6 @@ a:first-child {
   align-items: center;
   gap: 5px;
 }
-
 `;
 
 export const Menu = styled.ul`
@@ -89,46 +75,36 @@ align-items: center;
 list-style: none;
 
 
+
 @media screen and (max-width: 960px) {
   background:black;
   position: absolute;
   top: 70px;
   left: ${({ open }) => (open ? "0" : "-100%" )};
   width: 100%;
-  height: 100vh;
+  height: 100%;
   justify-content: center;
   flex-direction:column;
   align-items: center;
   transition: 0.5s all easy;
 }
-@media (min-width: 481px) and (max-width: 768px){
-  background: black;
-  
-}
+
 `;
 
+/*fondo del menu */
 export const MenuItem = styled.li`
-heigth: 100%;
+position: realative;
+heigth: 100vh;
 display: flex;
-flex-direction: row;
+flex-direction: column;
 align-items: center;
 justify-content: space-between;
 width: 100%;
-@media screen and (max-width: 960px){
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  aling-items: center;
-}
-
-@media screen and (max-width: 960px) {
-  width: 100%;
-}
-
-
+margin: 0 auto;
+background-color: black;
 
 `;
-
+ /* contenedor del home y los links */
 export const MenuItemLink = styled.a`
 display: flex;
 justify-content: space-around;
@@ -138,36 +114,55 @@ padding: 0.5rem 2.5rem;
 cursos: pointer;
 transition: 0.5s all ease;
 &: hover {
-  color: green;
-  background-color: rgba(259,21,0, 0.4);
+  color: white;
+  font-wide: 3rem;
   transition: 0.5s all ease;
+}
+
+@media only screen and (max-width: 324px) {
+ flex-direction: column;
+ justify-content: center;
+ width:100%;
 }
   `;
 
-
+/* fondo de icono de menu bars y x */
 export const MobileIcon = styled.div`
   display: none;
-  @media screen and (max-width: 960px) {
+
+  @media only screen and (max-width: 1000px) and (min-width: 324px) {
     display: flex;
+    flex-direction:column;
     align-items: center;
-    justify-content: end;
-    cursor: pointer;
+    justify-content: center;
+    cuarsor: pointer;
     font-size: 2rem;
     color:red;
+    
   }
+  
 `;
 
-
+      /* iconos*/
 export const LinkContainerStyled = styled.div`
   font-size: 1.5rem;
   color: ${props => (props.home ? 'rgb(209, 21, 6)' : 'rgb(209, 21, 6)')};
+  
+
+ 
 `;
 
+/* inicio de secion*/
 export const UserContainerStyled = styled(LinkContainerStyled)`
   display: flex;
   align-items: center;
+ widht:100%;
+ 
+
 `;
 
+
+/* numerito de compras*/
 export const CartNavStyled = styled.div`
   position: relative;
   cursor: pointer;
@@ -183,16 +178,22 @@ export const CartNavStyled = styled.div`
     background-color: white;
     font-size: 0.9rem;
   }
+ 
 `;
-
+/* string de inicia sesion*/
 export const UserNavStyled = styled.div`
   gap: 15px;
   cursor: pointer;
   span {
-    color:white;
+    color:red;
     font-size: 1rem;
     margin-right: 20px;
   }
+  @media screen and (max-width:324px) and (min-width: 769px) {
+   display: none;
+   }
+  
+  
 `;
 
 export const UserImageStyled = styled.img`
@@ -201,10 +202,17 @@ export const UserImageStyled = styled.img`
   border-radius: 100px;
   cursor: pointer;
 `;
-
+ /* contenedor de inicia secion */ 
 export const SpanStyled = styled.span`
+  color: red;
+
   &:hover {
     text-decoration: underline;
   }
+  
+
+  @media screen and (min-width: 324px) and (max:width 768px) {
+   display: none;
+   }
 `;
 

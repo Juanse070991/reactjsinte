@@ -5,6 +5,15 @@ export const ProductosContainerStyled = styled.div`
   border:3px solid white;
   background:black;
   border-radius:25px;
+  @media only screen and (min-width: 324px) and (max-width: 1024px) {
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    width: 100%;
+    height:100%;
+    margin-top: 150px;
+ 
+
 `;
 
 export const ProductsTitleStyled = styled.h2`
@@ -12,7 +21,14 @@ export const ProductsTitleStyled = styled.h2`
   font-size: 25px;
   color:white;
   margin-left:10px;
-`;
+  @media only screen and (min-width: 324px) and (max-width: 1024px) {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   margin : 25px 25px;
+    
+  }
+    `;
 
 export const CardsWrapperStyled = styled.div`
   display: flex;
@@ -20,7 +36,7 @@ export const CardsWrapperStyled = styled.div`
   align-items: center;
   gap: 25px;
   width: 80%;
-  height: 440px;
+  height: 400px;
   margin: 0 auto;
   overflow: scroll;
   background:black;
@@ -36,12 +52,15 @@ export const CardsWrapperStyled = styled.div`
   &::-webkit-scrollbar:horizontal {
     display: none;
   }
-  @media (max-height: 800px) {
-    height: 270px;
+
+  @media screen and (min-width: 324px) and (max-width: 1024px) {
+   heigth: 1200px;
+   margin-left: 2rem;
+   & p{
+    margin-left: 2rem;
+   }
   }
-  @media (max-width: 1500px) {
-    width: 100%;
-  }
+
 `;
 
 export const PriceContainerStyled = styled.div`
@@ -54,6 +73,10 @@ export const PriceContainerStyled = styled.div`
   color:rgb(0, 0, 153);
   font-size: 1rem;
   font-weight:600;
+
+  @media only screen and (min-width: 324px) and (max-width: 1024px) {
+  
+  }
 `;
 
 export const SubtotalStyled = styled.div`

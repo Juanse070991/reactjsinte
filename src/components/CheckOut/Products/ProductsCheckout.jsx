@@ -1,7 +1,7 @@
 import React from 'react';
 import { formatPrice } from '../../../utils';
 
-import card_product_checkout from '../../CardProductCheckout/card_product_checkout';
+import CardProductCheckout from '../../CardProductCheckout/CardProductCheckout';
 import Link from '../../UI/Link/Link';
 
 import {
@@ -25,7 +25,7 @@ const ProductsCheckout = ({ cartItems, shippingCost, price }) => {
           cartItems.map(item => <CardProductCheckout key={item.id} {...item} />)
         ) : (
           <>
-            <p>Agrega un producto bro</p>
+            <p>Agrega un producto</p>
             <Link />
           </>
         )}

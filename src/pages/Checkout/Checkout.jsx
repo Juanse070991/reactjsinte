@@ -3,8 +3,8 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 import CheckoutForm from '../../components/CheckOut/Form/CheckoutForm';
-import ProductsCheckout from '../../components/CheckOut/Prodcuts/ProductsCheckout';
-import { ContainerCheckoutStyled } from '../Checkout/CheckoutStyles';
+import ProductsCheckout from '../../components/CheckOut/Products/ProductsCheckout';
+import { ContainerCheckoutStyled, } from '../Checkout/CheckoutStyles';
 
 const Checkout = () => {
   const { cartItems, shippingCost } = useSelector(state => state.cart);

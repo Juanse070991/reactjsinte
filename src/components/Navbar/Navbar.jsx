@@ -56,6 +56,7 @@ function Navbar() {
           />
         </Link>
         </LogoContainer>
+
         <MobileIcon onClick={() => setShowMobileMenu(!showMobileMenu)}>
             {showMobileMenu ? <FaTimes /> : <FaBars />}
           </MobileIcon>
@@ -63,27 +64,55 @@ function Navbar() {
       <LinksContainerStyled>
       <Menu open={showMobileMenu}>
         <MenuItem>
+
           <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)} to='/'>
+
         <motion.div whileTap={{ scale: 0.97 }}>
+
           <Link to='/'>
+
             <LinkContainerStyled home>
+
               <HiHome />
+
             </LinkContainerStyled>
+
             Home
+
           </Link>
+
         </motion.div>
+
         </MenuItemLink>
+
         </MenuItem>
+
+       
         <MenuItem>
+
           <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)} to='/'>
+
         <CartNavStyled>
-          <CartIcon />
+           
+          
+
+          <CartIcon/>
+
+          
+
         </CartNavStyled>
+
         </MenuItemLink>
+
         </MenuItem>
+
+        
         <MenuItem>
+
           <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)} to='/'>
+
         <UserNavStyled>
+
           <UserContainerStyled
             onClick={() =>
               currentUser
@@ -91,19 +120,28 @@ function Navbar() {
                 : navigate('/register')
             }
           >
+
+
             <SpanStyled>
               {currentUser ? `${currentUser.displayName}` : 'Inicia Sesión'}
             </SpanStyled>
+
+
             {currentUser?.photoURL ? (
               <UserImageStyled src={currentUser.photoURL} alt='Perfil' />
             ) : (
               <FaUserAlt />
             )}
           </UserContainerStyled>
-        </UserNavStyled>
+
+         </UserNavStyled>
+
         </MenuItemLink>
+
         </MenuItem>
+
         </Menu>
+
       </LinksContainerStyled>
       </Wrapper>
     </NavbarContainerStyled>

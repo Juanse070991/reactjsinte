@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const HeroContainerStyled = styled.div`
   display: flex;
+ flex-direction: row;
   justify-content: space-around;
   align-items: center;
   max-width: 1300px;
@@ -9,48 +10,21 @@ export const HeroContainerStyled = styled.div`
   h1 {
     margin-bottom: 2rem;
   }
-  @media (min-width: 769px) and (max-width: 1024px){
-    max-width:1024px;
-    width: 100vh;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    h1{
-      font-size: 1.2rem;
+  @media only screen and (min-width: 324px) and (max-width: 1250px) {
+  display:none;
     }
-    img{
-      width:100%;
-      height: 200px;
-      margin-top:20px;
-      
-    }
-  }
-  @media (min-width: 481px) and (max-width: 768px){
-    max-width:768px;
-    width: 100vh;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    h1{
-      font-size: 1.2rem;
-    }
-    img{
-      width:100%;
-      height: 80%;
-      margin-top:20px;
-      
-    }
-  }
-
+    
 `;
 
 export const HeroFormStyled = styled.form`
   display: flex;
   align-items: center;
   gap: 20px;
-  position: relative;
+  
+
+  @media only screen and (max-width: 324px) {
+   display:none;
+  }
 `;
 
 export const HeroSearchBarStyled = styled.input`
@@ -60,6 +34,10 @@ export const HeroSearchBarStyled = styled.input`
   border-radius: 15px;
   padding: 0.5rem 2.3rem;
   color: white;
+  @media only screen and (min-width: 324px) and (max-width: 624px) {
+ display:none;
+  }
+ 
 `;
 
 export const IconWrapperStyled = styled.div`
@@ -67,6 +45,9 @@ export const IconWrapperStyled = styled.div`
   top: 12px;
   left: 12px;
   font-size: 1.1rem;
+
+  @media only screen and (min-width: 324px) {
+    display:none;
 
 `;
 
@@ -80,4 +61,9 @@ export const HeroBtnStyled = styled.input`
   text-transform: uppercase;
   font-weight: 400;
   cursor: pointer;
+ 
+
+  @media screen and (min-width: 324px) {
+ margin: 40px auto;
+  }
 `;

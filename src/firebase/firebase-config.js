@@ -15,12 +15,12 @@ export const actionCodeSettingsVerification = {
   url:
     process.env.NODE_ENV === 'development'
       ? 'http://localhost:3000'
-      : 'https://nucba-zappi-1917.web.app',
+      : 'la-acusti-k.web.app',
 };
 
 export const actionCodeSettingsForgotPassword = {
   url:
     process.env.NODE_ENV === 'development'
       ? 'http://localhost:3000/login'
-      : 'https://nucba-zappi-1917.web.app',
+      : 'la-acusti-k.web.app',
 };

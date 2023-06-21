@@ -8,6 +8,9 @@ export const MisOrdenesContainerStyled = styled.div`
   gap: 20px;
   max-width: 1500px;
   margin: 0 auto;
+  @media screen and (max-width: 768px){
+    
+  }
  
 `;
 

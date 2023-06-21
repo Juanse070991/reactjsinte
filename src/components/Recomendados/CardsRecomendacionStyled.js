@@ -31,6 +31,11 @@ export const Card = styled.div`
   background: black;
   border-radius: 15px;
   border: 3px solid  rgba(250,250,250,0.9);
+
+  @media only screen and (min-width: 324px) and (max-width: 678px) {
+    height: 400px;
+    flex-direction:column;
+  }
 `;
 
 export const CardImg = styled.img`

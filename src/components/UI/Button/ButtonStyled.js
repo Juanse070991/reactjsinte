@@ -28,5 +28,6 @@ export const StyledButton = styled(motion.button)`
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
       }
+   
     `}
 `;
