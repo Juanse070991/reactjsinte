@@ -33,6 +33,7 @@ const Footer = () => {
       </TarjetasCreditoStyled>
       <LogoContainer>
          <span><img src='https://res.cloudinary.com/ddfzor3mh/image/upload/c_scale,e_boomerang,w_80/v1678315084/BoomSonic_y71f6k.jpg'></img></span>
+         <p>Hecho Por Juan Sebastian Viedma</p>
       </LogoContainer>  
       
          </FooterContainerStyled>

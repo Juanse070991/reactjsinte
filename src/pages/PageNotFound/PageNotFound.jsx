@@ -14,7 +14,7 @@ const PageNotFound = () => {
       <FoundContainerStyled>
         <FoundTextStyled>
           <FoundTitleStyled>404 Error</FoundTitleStyled>
-          <FoundSubtitleStyled>¡Se enfrió la zappi!</FoundSubtitleStyled>
+          <FoundSubtitleStyled>¡No se encontro!</FoundSubtitleStyled>
           <p>Parece que la página que buscás no existe o fue removida</p>
           <Link />
         </FoundTextStyled>

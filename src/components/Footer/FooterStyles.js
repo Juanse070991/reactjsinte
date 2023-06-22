@@ -11,35 +11,56 @@ export const FooterContainerStyled = styled.footer`
     border-radius: 5px;
   }
 
-  @media screen and (min-width: 280px) and (max-width: 1240px){
+  @media screen and (min-width: 320px) and (max-width: 479px){
     background-color: black;
-    flex-direction:column;
-    flex-wrap: wrap;
+    flex-direction:row;
+    gap: 3rem 1rem;
+    justify-content:center;
+    flex-wrap:wrap;
+    background-color: pink;
     
   }
 `;
 
 export const LinksContainerStyled = styled.div`
   margin-bottom: 2rem ;
+  display:flex;
+  flex-direction: row;
+  align-item:center;
+  justify-content: center;
   width:25%;
   
+  @media screen and (min-width: 320px) and (max-width: 479px){
+    margin-right: 2.5rem;
+    width:100%;
+    & a:hover{
+      font-size: 2.5rem;
+      color:red;
+      transition: 1.2s;
+    }
+ 
   
   
   `;
 
 export const TarjetasCreditoStyled = styled.div`
 width:25%;
+display:flex;
+flex-direction: row;
+align-item:center;
+justify-content: center;
+
 span{
   margin: 10px 30px;
 }
   
-   @media screen and (min-width: 280px) and (max-width: 1240px){
+   @media screen and (min-width: 320px) and (max-width: 479px){
     flex-direction:row;
-    width:25%;
+    width:100%;
     align-item: center;
-    justify-content:center;
+    justify-content:space-around;
     span{
-      margin: 10px 30px;
+      
       flex-direction:row;
     }
   }
@@ -50,17 +71,26 @@ span{
   display: flex;
   width:25%;
   flex-direction:column;
-  flex-wrap: wrap;
   justify-content:center;
   & span{
-     font-size: 1.5rem;
-     font-weigth: 600; 
+    font-size: 1.5rem;
+    font-weigth: 600;
+    background-color: rgb(0, 0, 0);
+    border-radius: 0 0 0 1rem;
+    box-shadow: 0 0 50px 20px rgba(259,21,0, 0.4);
+    letter-spacing: -1px;
   }
-  @media screen and (min-width: 320px) and (max-width: 1240px){
+  & p{
+    display:flex;
+  }
+  @media screen and (min-width: 320px) and (max-width: 479px){
     gap: 15px;
-    flex-direction:row;
+    width:100%;
+    margin-left:1.5rem;
+    align-item:center;
+    flex-direction:column;
     & img{
-      font-size: 5rem;
+      font-size: 1.1rem;
     }
   }
  
@@ -69,11 +99,22 @@ span{
   `;
   export const LogoContainer = styled.div ` 
   width:25%;
+  display: flex;
+  justify-content:center;
+  align-item: center;
   & img,span{
-    margin-top: 20px;
+    margin-top: 2px;
 
   }
-  
+  @media screen and (min-width: 320px) and (max-width: 479px){
+    gap: 15px;
+    width:100%;
+    margin-left:1.5rem;
+    justify-content: center;
+    align-item:center;
+    & img{
+      font-size: 1.1rem;
+    }
   
   `;
 

@@ -51,7 +51,7 @@ export const getOrdersFail = error => ({
   type: FETCH_ORDERS_FAIL,
   payload:
     error ||
-    'Upsss, algo salio mal. No hay ordens sin usuario, es como querer jugar al futbol sin una pelota.',
+    'Siguen saliendo promociones nuevas, no te detengas.',
 });
 
 // Para recibir todas las ordenes
