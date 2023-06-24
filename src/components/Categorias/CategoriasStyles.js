@@ -27,6 +27,16 @@ export const CategoriasContainer = styled.div`
     alig-items: center;
     height:100%;
   }
+
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    max-width:481px;
+    display:flex;
+    width:100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    alig-items: center;
+    height:100%;
+  }
   
 `;
 

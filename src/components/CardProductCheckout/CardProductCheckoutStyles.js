@@ -16,14 +16,25 @@ export const CardContainerStyled = styled.div`
     border-radius: 16px;
     object-fit: cover;
   }
-  @media screen and (min-width: 324px) and (max-width: 1024px){
-  flex-direction: column;
-  justify-content:center;
-  border:3px solid white;
-  background:black;
-  border-radius:25px;
-  margin-top: 10px;
+  @media screen and (min-width: 320px) and (max-width: 480px){
+    flex-direction: column;
+    justify-content:center;
+    border:3px solid white;
+    background:black;
+    border-radius:25px;
+    margin-top: 10px;
+    }
+
+  @media screen and (min-width: 481px) and (max-width: 767px){
+    
+    flex-direction: column;
+    justify-content:center;
+    border:3px solid white;
+    background:black;
+    border-radius:25px;
+    margin-top: 10px;
   }
+
   `;
 
 export const CardInfoStyled = styled.div`
@@ -31,6 +42,13 @@ export const CardInfoStyled = styled.div`
   flex-direction: column;
   gap: 5px;
   width: 240px;
+  
+  @media screen and (min-width: 481apx) and (max-width: 767px){
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 240px;
+    }
 `;
 
 export const ProductTitleStyled = styled.h3`

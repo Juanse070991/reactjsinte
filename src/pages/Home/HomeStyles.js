@@ -19,6 +19,9 @@ h2 {
  justify-content:center;
  flex-direction: column;   
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  max-width:481px;
+}
 
 @media (min-width: 768px) and (max-width: 1024px){
   width:100%;
@@ -48,10 +51,18 @@ export const CategoriasWrapper = styled.section`
   }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
     width:100%;
-    max-width: 480px;
+    max-width: 320px;
     heigth: 100%;
     h2{
       font-size: 1.3rem;
+      font-weigth: 600;
+    }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    max-width:481px;
+    h2{
+      font-size: 1.2rem;
       font-weigth: 600;
     }
   }

@@ -16,8 +16,13 @@ export const CheckoutDatosStyled = styled.div`
       margin-right:8rem;
       text-align: center;
     }
+
+    @media screen and (min-width: 481px) and (max-width: 767px){
+      max-width: 767px;
+      background-color:red;
+    
   }
-  @media screen and (min-width: 678px) and (max-width: 1024px){
+  @media screen and (min-width: 768px) and (max-width: 1024px){
     max-width: 1024px;
     background-color: red;
     h2{
@@ -76,7 +81,7 @@ export const Form = styled(FormikForm)`
     margin: 40px auto;
     justify-content: center;
     align-item:center;
-    flex-direction: column;
+    flex-direction: row;
   }
  
   

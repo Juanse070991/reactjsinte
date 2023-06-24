@@ -7,10 +7,28 @@ export const ProductosContainerStyled = styled.div`
   border-radius:25px;
   @media only screen and (min-width: 320px) and (max-width: 480px) {
     max-width: 320px;
+    flex-direction:column;
+    width: 95%;
+    height:100%;
+    margin-top:50px;
+    padding:3px 3px;
+    
+  }
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    max-width: 767px;
     flex-direction:row;
     width: 95%;
     height:100%;
     margin-top:50px;
+    padding:3px 3px;
+    
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    max-width: 1024px;
+    flex-direction:row;
+    width: 95%;
+    height:100%;
+    margin-top:80px;
     padding:3px 3px;
     
   }
@@ -22,11 +40,19 @@ export const ProductsTitleStyled = styled.h2`
   font-size: 25px;
   color:white;
   margin-left:10px;
-  @media only screen and (min-width: 324px) and (max-width: 1024px) {
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
     justify-content: center;
     align-items: center;
     width: 100%;
-   margin : 25px 80px;
+    margin : 25px 80px;
+    
+  }
+
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin : 25px 80px;
     
   }
     `;
@@ -61,6 +87,13 @@ export const CardsWrapperStyled = styled.div`
    & p{
     margin-left: 4rem;
    }
+  }
+ 
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    justify-content: center;
+    & {
+      padding:2px 1.5rem;
+     }
   }
 
 `;

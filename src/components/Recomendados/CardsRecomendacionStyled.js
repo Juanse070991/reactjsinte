@@ -24,11 +24,18 @@ export const CardsContainer = styled.div`
     font-size: 1rem;
     width:100%;
   }
+
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    font-weight: 800;
+    font-size: 1rem;
+    width:100%;
+    
+  }
+
 `;
 
 export const Card = styled.div`
   display: flex;
-  
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -39,6 +46,14 @@ export const Card = styled.div`
   border: 3px solid  rgba(250,250,250,0.9);
 
   @media only screen and (min-width: 320px) and (max-width: 480px) {
+    height: 300px;
+    flex-direction:column;
+    justify-content: space-around;
+    width: 150px;
+    margin:0 auto;
+  }
+
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
     height: 300px;
     flex-direction:column;
     justify-content: space-around;
@@ -64,6 +79,7 @@ export const CardText = styled.div`
   flex-direction: column;
   gap: 5px;
   width: 220px;
+
 `;
 
 export const CardTitle = styled.h2`
@@ -71,6 +87,7 @@ export const CardTitle = styled.h2`
   margin-bottom: 5px;
   font-weight: 500;
   letter-spacing: 0.05rem;
+ 
 `;
 
 export const InfoCard = styled.p`
@@ -82,6 +99,13 @@ export const InfoCard = styled.p`
     font-weight: 800;
     font-size: 1rem;
   }
+  
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    font-weight: 800;
+    font-size: 1rem;
+
+  }
+
 `;
 
 export const CardPrice = styled.span`

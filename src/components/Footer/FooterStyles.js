@@ -18,13 +18,26 @@ export const FooterContainerStyled = styled.footer`
     justify-content:center;
     
   }
-  @media screen and (min-width: 480px) and (max-width: 599px){
+  @media screen and (min-width: 481px) and (max-width: 767px){
     background-color: black;
+    max-width: 767px;
     flex-direction:column;
     height:100%;
-    gap: 3rem 1rem;
+    width:100%;
+    
     justify-content:center;
-    flex-wrap:wrap;
+    
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px){
+    background-color: black;
+    max-width: 767px;
+    flex-direction:column;
+    height:100%;
+    width:100%;
+    
+    justify-content:center;
+    
    
     
   }
@@ -47,14 +60,19 @@ export const LinksContainerStyled = styled.div`
       transition: 1.2s;
     }
  
-    @media screen and (min-width: 480px) and (max-width: 599px){
-    
-      margin-right: 2.5rem;
+    @media screen and (min-width: 481px) and (max-width: 767px){
+      background-color: white;
+      margin-right: 2rem;
       width:100%;
-      & a:hover{
-        font-size: 2.5rem;
-        color:red;
-        transition: 1.2s;
+      max-width: 767px;
+
+    }
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+      background-color: white;
+      margin-right: 2rem;
+      width:100%;
+      max-width: 1024px;
+
     }
   
   `;
@@ -70,7 +88,7 @@ span{
   margin: 10px 30px;
 }
   
-   @media screen and (min-width: 320px) and (max-width: 479px){
+   @media screen and (min-width: 320px) and (max-width: 480px){
     flex-direction:row;
     width:100%;
     align-item: center;
@@ -80,14 +98,8 @@ span{
      }
   }
 
-  @media screen and (min-width: 480px) and (max-width: 599px){
-    flex-direction:row;
-    width:100%;
-    align-item: center;
-    justify-content:space-around;
-    span{
-      flex-direction:row;
-     }
+  @media screen and (min-width: 481px) and (max-width: 767px){
+   display:none;
   }
   
   `;
@@ -131,7 +143,7 @@ span{
     margin-top: 2px;
 
   }
-  @media screen and (min-width: 320px) and (max-width: 479px){
+  @media screen and (min-width: 320px) and (max-width: 480px){
     gap: 15px;
     width:100%;
     margin-left:1.5rem;
@@ -140,6 +152,16 @@ span{
     & img{
       font-size: 1.1rem;
     }
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+      gap: 15px;
+      width:100%;
+      margin-left:1.5rem;
+      justify-content: center;
+      align-item:center;
+      & img{
+        font-size: 1.1rem;
+        margin: 20px 80px;
+      }
   
   `;
 

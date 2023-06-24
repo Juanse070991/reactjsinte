@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 
 export const NavbarContainerStyled = styled.div`
 height: 100px;
-max-width: 1680px;
 width: 100%;
 background-color:  rgb(0, 0, 0);
 display: flex;
@@ -15,6 +14,15 @@ padding: 1rem 4rem;
   justify-content: space-around;
   margin: 10px 0px;
   max-width: 480px;
+  padding: 0px 0px;
+  width:100%;
+  
+
+}
+@media (min-width: 481px) and (max-width: 767px){
+  justify-content: space-around;
+  margin: 10px 0px;
+  max-width: 481px;
   padding: 0px 0px;
   width:100%;
 
@@ -60,10 +68,16 @@ margin: 20px auto;
 @media (min-width: 320px) and (max-width: 480px){
   width: 100%;
   max-width:480px;
-  justify-content: space-around;
+ justify-content: space-around;
+ 
   
 
  }
+
+ @media (min-width: 481px) and (max-width: 767px){
+  
+
+}
 
 @media (min-width: 768px) and (max-width: 1024px){
  width: 100%;
@@ -91,8 +105,12 @@ font-size: 1.2rem;
  img{
   width:70px;
   heigth:70px;
-  margin: 0px 4rem;
+  margin:0px 4rem;
  }
+ @media (min-width: 481px) and (max-width: 767px){
+
+
+}
   
  
  }
@@ -121,8 +139,18 @@ a:first-child {
 @media (min-width: 320px) and (max-width: 480px){
   max-width:480px;
   width:100%;
+  justify-content: space-around;
+  gap:0px;
+  a {
+    padding: 0rem 0rem;
+  }
  
  
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+ 
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
@@ -147,9 +175,21 @@ align-items: center;
 list-style: none;
 
 
-
-
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  background:black;
+  position: absolute;
+  top: 70px;
+  left: ${({ open }) => (open ? "0" : "-130%" )};
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  flex-direction:column;
+  align-items: center;
+  transition: 0.5s all easy;
+  
+}
+
+@media (min-width: 481px) and (max-width: 767px){
   background:black;
   position: absolute;
   top: 70px;
@@ -191,11 +231,15 @@ width: 100%;
 margin: 0 auto;
 background-color: black;
 
-
-
-
+@media screen and (min-width: 320px) and (max-width: 480px) {
+height:100vh;
+width:100%;
+justify-content:center;
+}
 
 `;
+
+
  /* contenedor del home y los links */
 export const MenuItemLink = styled.a`
 display: flex;
@@ -215,7 +259,12 @@ transition: 0.5s all ease;
  flex-direction: column;
  justify-content: center;
  width:100%;
- padding: 0.5rem 2.5rem;
+ padding: 0.5rem 2.5rem;a
+
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+  
 
 }
 
@@ -240,6 +289,15 @@ export const MobileIcon = styled.div`
     
   }
 
+  @media (min-width: 481px) and (max-width: 767px){
+    justify-content: space-around;
+    margin: 10px 0px;
+    max-width: 480px;
+    padding: 0px 0px;
+    width:100%;
+  
+  }
+
   @media screen and (min-width: 320px) and (max-width: 480px) {
     font-size: 1.5rem;
     
@@ -252,7 +310,6 @@ export const LinkContainerStyled = styled.div`
   font-size: 1.5rem;
   color: ${props => (props.home ? 'rgb(209, 21, 6)' : 'rgb(209, 21, 6)')};
   
-
  
 `;
 
@@ -262,7 +319,6 @@ export const UserContainerStyled = styled(LinkContainerStyled)`
   align-items: center;
  widht:100%;
  
-
 `;
 
 
