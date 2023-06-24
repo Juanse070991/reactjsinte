@@ -18,4 +18,11 @@ export const IncreaseStyled = styled(motion.button)`
     opacity: 0.5;
     cursor: not-allowed;
   }
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    margin-top:10px;
+    width: 20px;
+    height: 20px;
+
+    }
 `;

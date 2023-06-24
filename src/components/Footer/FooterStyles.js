@@ -11,13 +11,21 @@ export const FooterContainerStyled = styled.footer`
     border-radius: 5px;
   }
 
-  @media screen and (min-width: 320px) and (max-width: 479px){
+  @media screen and (min-width: 320px) and (max-width: 480px){
     background-color: black;
-    flex-direction:row;
+    flex-direction:column;
+    gap: 3rem 1rem;
+    justify-content:center;
+    
+  }
+  @media screen and (min-width: 480px) and (max-width: 599px){
+    background-color: black;
+    flex-direction:column;
+    height:100%;
     gap: 3rem 1rem;
     justify-content:center;
     flex-wrap:wrap;
-    background-color: pink;
+   
     
   }
 `;
@@ -30,8 +38,8 @@ export const LinksContainerStyled = styled.div`
   justify-content: center;
   width:25%;
   
-  @media screen and (min-width: 320px) and (max-width: 479px){
-    margin-right: 2.5rem;
+  @media screen and (min-width: 320px) and (max-width: 480px){
+    margin-right: 2.7rem;
     width:100%;
     & a:hover{
       font-size: 2.5rem;
@@ -39,7 +47,15 @@ export const LinksContainerStyled = styled.div`
       transition: 1.2s;
     }
  
-  
+    @media screen and (min-width: 480px) and (max-width: 599px){
+    
+      margin-right: 2.5rem;
+      width:100%;
+      & a:hover{
+        font-size: 2.5rem;
+        color:red;
+        transition: 1.2s;
+    }
   
   `;
 
@@ -60,9 +76,18 @@ span{
     align-item: center;
     justify-content:space-around;
     span{
-      
       flex-direction:row;
-    }
+     }
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 599px){
+    flex-direction:row;
+    width:100%;
+    align-item: center;
+    justify-content:space-around;
+    span{
+      flex-direction:row;
+     }
   }
   
   `;
@@ -75,25 +100,25 @@ span{
   & span{
     font-size: 1.5rem;
     font-weigth: 600;
-    background-color: rgb(0, 0, 0);
+    
     border-radius: 0 0 0 1rem;
     box-shadow: 0 0 50px 20px rgba(259,21,0, 0.4);
     letter-spacing: -1px;
   }
   & p{
     display:flex;
-  }
-  @media screen and (min-width: 320px) and (max-width: 479px){
-    gap: 15px;
+    width: 100%;
+   
+    height:100%;
+  } 
+  @media screen and (max-width: 480px){
     width:100%;
-    margin-left:1.5rem;
+    margin-left: 5rem;
     align-item:center;
-    flex-direction:column;
     & img{
       font-size: 1.1rem;
     }
   }
- 
 
 
   `;

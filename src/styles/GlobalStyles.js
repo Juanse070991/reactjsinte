@@ -73,6 +73,10 @@ export const GlobalStyles = createGlobalStyle`
     color: white;
     -webkit-tap-highlight-color: transparent;
     overflow-x: hidden 
+    
+    @media (min-width: 320px) and (max-width: 480px){
+      background-image: none;
+      backgrounda-color: black;
     }
     a {
     text-decoration: none;

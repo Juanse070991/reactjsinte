@@ -10,12 +10,23 @@ h2 {
   font-weight: 400;
 }
 
-@media screen and (min-width: 324px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  max-width:480px;
+  width: 100%;
+  padding: 0px;
  display:flex;
  align-item:center;
  justify-content:center;
  flex-direction: column;   
 }
+
+@media (min-width: 768px) and (max-width: 1024px){
+  width:100%;
+  max-width: 1024px;
+  padding:0;
+
+ 
+ }
 
 `;
 
@@ -35,9 +46,14 @@ export const CategoriasWrapper = styled.section`
     align-item:center;
     color: white;
   }
-  @media only screen and (min-width: 324px) and (max-width: 769px) {
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
     width:100%;
+    max-width: 480px;
     heigth: 100%;
+    h2{
+      font-size: 1.3rem;
+      font-weigth: 600;
+    }
   }
   
 
@@ -66,6 +82,16 @@ export const ProductosWrapper = styled.section`
   }
   @media only screen and (max-width: 1000px) and (min-width: 624px) {
   }
+
+  @media (min-width: 320px) and (max-width: 480px){
+     justify-content: center;
+     background-size: 80%;
+  border-radius: 10px;
+  border: 1.5px solid black;
+  h2 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
 `;
 
 export const RecomendadosWrapper = styled.section`
@@ -73,7 +99,7 @@ export const RecomendadosWrapper = styled.section`
   h2 {
     font-weight: 400;
   }
-  @media only screen and (min-width: 324px) and (max-width: 678px) {
+  @media only screen and (min-width: 481px) and (max-width: 678px) {
    text-align: center;
    h2{
     font-weigth: 400;
@@ -84,6 +110,17 @@ export const RecomendadosWrapper = styled.section`
     border: 3px;
    }
   }
+
+  @media (min-width: 320px) and (max-width: 480px){
+    text-align: center;
+    h2{
+     font-weigth: 400;
+     font-size: 1rem;
+     margin-top: 40px;
+     border-radius:5px;
+     border: solid white 2px; 
+     background-color: red;
+     width:100%;    
 `;
 
 export const ButtonContainerStyled = styled.div`

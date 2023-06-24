@@ -6,12 +6,14 @@ export const ContainerCheckoutStyled = styled.div`
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 2rem 5rem;
-  @media screen and (min-width: 324px) and (max-width: 1024px) {
-    justify-content: spacea-around;
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    justify-content: none;
     flex-direction:column;
-    align-items: center;
-    width: 80%;
+    align-items: none;
+    max-width: 480px;
+    width: 100%;
     height:100%;
+    padding: 2rem 0;
   }
   
 `;

@@ -9,4 +9,6 @@ export const CountStyled = styled.span`
   font-size: 18px;
   letter-spacing: 0.6px;
   opacity: 0.7;
+
+
 `;

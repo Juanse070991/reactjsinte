@@ -2,15 +2,33 @@ import styled, { css } from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const NavbarContainerStyled = styled.div`
-  height: 100px;
-  width: 95%;
-  background-color:  rgb(0, 0, 0);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 4rem;
+height: 100px;
+max-width: 1680px;
+width: 100%;
+background-color:  rgb(0, 0, 0);
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem 4rem;
 
-  
+@media (min-width: 320px) and (max-width: 480px){
+  justify-content: space-around;
+  margin: 10px 0px;
+  max-width: 480px;
+  padding: 0px 0px;
+  width:100%;
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  justify-content: space-around;
+  max-width: 1024px;
+  width:100%;
+  padding: none;
+
+
+}
+
 `;
 
 export const ModalOverlayStyled = styled(motion.div)`
@@ -18,17 +36,19 @@ export const ModalOverlayStyled = styled(motion.div)`
   top: 0;
   left: 0;
   z-index: 50;
-  width: calc(100vw - 450px);
+  width: calc(100vw - 450px);d
   height: 100vh;
   ${({ isHidden }) =>
     !isHidden &&
     css`
       backdrop-filter: blur(4px);
     `}
-    
+   
+   
 `;
 
 export const Wrapper = styled.div`
+max-width:1680px;
 width: 100%;
 height: 100%;
 display: flex; 
@@ -36,6 +56,24 @@ flex-directon: row;
 align-items:center;
 justify-content: space-between;
 margin: 20px auto;
+
+@media (min-width: 320px) and (max-width: 480px){
+  width: 100%;
+  max-width:480px;
+  justify-content: space-around;
+  
+
+ }
+
+@media (min-width: 768px) and (max-width: 1024px){
+ width: 100%;
+ max-width:1024px;
+ gap:0px 31rem;
+ margin:0px 0px;
+
+}
+
+
 `;
  
 export const LogoContainer = styled.div`
@@ -43,6 +81,21 @@ margin-left: 0.5rem;
 display: flex;
 align-itmes: center;
 font-size: 1.2rem;
+
+@media (min-width: 768px) and (max-width: 1024px){
+  margin-left: 10px;
+  
+ 
+ }
+ @media (min-width: 320px) and (max-width: 480px){
+ img{
+  width:70px;
+  heigth:70px;
+  margin: 0px 4rem;
+ }
+  
+ 
+ }
 
 `;
 
@@ -64,6 +117,25 @@ a:first-child {
   align-items: center;
   gap: 5px;
 }
+
+@media (min-width: 320px) and (max-width: 480px){
+  max-width:480px;
+  width:100%;
+ 
+ 
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  
+  max-width:1024px;
+  width:100%;
+ background-color: red;
+ gap: 0px;  
+ a {
+  padding: none;
+}
+
+}
 `;
 
 export const Menu = styled.ul`
@@ -76,11 +148,12 @@ list-style: none;
 
 
 
-@media screen and (max-width: 960px) {
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
   background:black;
   position: absolute;
   top: 70px;
-  left: ${({ open }) => (open ? "0" : "-100%" )};
+  left: ${({ open }) => (open ? "0" : "-130%" )};
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -88,6 +161,21 @@ list-style: none;
   align-items: center;
   transition: 0.5s all easy;
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  background:black;
+  position: absolute;
+  top: 70px;
+  left: ${({ open }) => (open ? "0" : "-130%" )};
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  flex-direction:column;
+  align-items: center;
+  transition: 0.5s all easy;
+}
+
 
 `;
 
@@ -102,6 +190,10 @@ justify-content: space-between;
 width: 100%;
 margin: 0 auto;
 background-color: black;
+
+
+
+
 
 `;
  /* contenedor del home y los links */
@@ -119,18 +211,25 @@ transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
 
-@media only screen and (max-width: 324px) {
+@media only screen and (max-width: 320px) {
  flex-direction: column;
  justify-content: center;
  width:100%;
+ padding: 0.5rem 2.5rem;
+
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  padding:0;
+} 
+
   `;
 
 /* fondo de icono de menu bars y x */
 export const MobileIcon = styled.div`
   display: none;
 
-  @media only screen and (max-width: 1000px) and (min-width: 324px) {
+  @media only screen and (max-width:1024px) {
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -140,6 +239,11 @@ export const MobileIcon = styled.div`
     color:red;
     
   }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 1.5rem;
+    
+  } 
   
 `;
 
@@ -189,7 +293,7 @@ export const UserNavStyled = styled.div`
     font-size: 1rem;
     margin-right: 20px;
   }
-  @media screen and (max-width:324px) and (min-width: 769px) {
+  @media screen and (max-width:320px) and (min-width: 769px) {
    display: none;
    }
   
@@ -211,7 +315,7 @@ export const SpanStyled = styled.span`
   }
   
 
-  @media screen and (min-width: 324px) and (max:width 768px) {
+  @media screen and (min-width: 320px) and (max:width 768px) {
    display: none;
    }
 `;

@@ -19,8 +19,9 @@ export const CategoriasContainer = styled.div`
     alig-items: center;
     height:100%;
   }
-  @media (min-width: 481px) and (max-width: 768px){
+  @media (min-width: 320px) and (max-width: 480px){
     display:flex;
+    width:100%;
     flex-wrap: wrap;
     justify-content: center;
     alig-items: center;
@@ -70,11 +71,21 @@ export const CardCategoria = styled(motion.div)`
     justify-content: center;
     alig-items: center;
   }
+
+  @media (min-width: 320px) and (max-width: 480px){
+    margin-right: 2.4rem;
+    height: 180px;
+    width:160px;
+  h2 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  }
+
 `;
 
 export const BorderDecoration = styled.div`
   height: 5px;
   width: 30%;
-  background: var(blue);
   border-radius: 15px;
 `;
