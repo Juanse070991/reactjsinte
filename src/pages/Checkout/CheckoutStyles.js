@@ -6,7 +6,7 @@ export const ContainerCheckoutStyled = styled.div`
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 2rem 5rem;
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 280px) and (max-width: 480px) {
     justify-content: none;
     flex-direction:column;
     align-items: none;

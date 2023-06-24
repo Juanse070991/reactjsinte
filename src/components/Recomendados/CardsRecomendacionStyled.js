@@ -45,7 +45,7 @@ export const Card = styled.div`
   border-radius: 15px;
   border: 3px solid  rgba(250,250,250,0.9);
 
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
+  @media only screen and (min-width: 280px) and (max-width: 480px) {
     height: 300px;
     flex-direction:column;
     justify-content: space-around;
@@ -68,7 +68,7 @@ export const CardImg = styled.img`
   border-radius: 16px;
   object-fit: cover;
   
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
+  @media only screen and (min-width: 280px) and (max-width: 480px) {
     width:150px;
   height: 100px;
   }
@@ -95,7 +95,7 @@ export const InfoCard = styled.p`
   color: rgb(209, 21, 6);
   font-size: 1.2rem;
   
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
+  @media only screen and (min-width: 280px) and (max-width: 480px) {
     font-weight: 800;
     font-size: 1rem;
   }
@@ -115,7 +115,7 @@ export const CardPrice = styled.span`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
+  @media only screen and (min-width: 280px) and (max-width: 480px) {
     font-weight: 800;
     font-size: 1rem;
   }

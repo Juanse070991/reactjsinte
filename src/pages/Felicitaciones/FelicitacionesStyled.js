@@ -11,7 +11,7 @@ export const TextStyled = styled.div`
   width: 100%;
   margin: 0 auto;
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 280px) and (max-width: 480px) {
     height:100%;
     padding: 10px 0px;
   }
@@ -22,7 +22,7 @@ background: linear-gradient(83deg, rgba(250,250,250,0.9), rgb(209, 21, 6));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 280px) and (max-width: 480px) {
     font-size:1.3rem;
   }
 `;
@@ -32,7 +32,7 @@ export const ContainerInfoStyled = styled.div`
   & p {
     margin-bottom: 50px;
   }
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 280px) and (max-width: 480px) {
     font-size: 1rem;
   }
 `;
@@ -43,7 +43,7 @@ export const PatternStyled = styled.img`
   z-index: -100000000;
   bottom: -80px;
   
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 280px) and (max-width: 480px) {
     margin-top: 4rem;
   }
 `;

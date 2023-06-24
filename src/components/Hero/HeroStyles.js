@@ -10,7 +10,7 @@ export const HeroContainerStyled = styled.div`
   h1 {
     margin-bottom: 2rem;
   }
-  @media only screen and (min-width: 324px) and (max-width: 1250px) {
+  @media only screen and (min-width: 280px) and (max-width: 1250px) {
   display:none;
     }
     
@@ -34,7 +34,7 @@ export const HeroSearchBarStyled = styled.input`
   border-radius: 15px;
   padding: 0.5rem 2.3rem;
   color: white;
-  @media only screen and (min-width: 324px) and (max-width: 624px) {
+  @media only screen and (min-width: 280px) and (max-width: 624px) {
  display:none;
   }
  
@@ -63,7 +63,7 @@ export const HeroBtnStyled = styled.input`
   cursor: pointer;
  
 
-  @media screen and (min-width: 324px) {
+  @media screen and (min-width: 280px) {
  margin: 40px auto;
   }
 `;

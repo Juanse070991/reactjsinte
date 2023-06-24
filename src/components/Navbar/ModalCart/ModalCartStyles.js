@@ -19,7 +19,7 @@ export const ContainerStyled = styled(motion.div)`
 
   
 
-  @media (min-width: 320px) and (max-width: 480px){
+  @media (min-width: 280px) and (max-width: 480px){
     width: 95%;
     height:100%;
     gap:0px;
@@ -36,7 +36,7 @@ export const ContainerStyled = styled(motion.div)`
 
 export const CloseButtonContainerStyled = styled.div`
   height: 32px;
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
+  @media only screen and (min-width: 280px) and (max-width: 480px) {
    margin-left:1.7rem ;
   }
 `;
@@ -54,7 +54,7 @@ export const CloseButtonStyled = styled(motion.button)`
   color: white;
   cursor: pointer;
   
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
+  @media only screen and (min-width: 280px) and (max-width: 480px) {
     width: 1.3rem;
     height: 1.3rem;
     
@@ -70,7 +70,7 @@ export const TitleStyled = styled.div`
   & h1 {
     margin-top: 1px;
   }
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
+  @media only screen and (min-width: 280px) and (max-width: 480px) {
   h1{
     font-size:1rem;
   }
@@ -79,7 +79,7 @@ export const TitleStyled = styled.div`
 
 export const MainContainerStyled = styled.div`
   height: 55%;
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
+  @media only screen and (min-width: 280px) and (max-width: 480px) {
    width:95%;
    margin-left: 2rem;
    height: 40%;
@@ -107,7 +107,7 @@ export const ProductsWrapperStyled = styled.div`
     height: 235px;
   }
 
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
+  @media only screen and (min-width: 280px) and (max-width: 480px) {
     gap:none;
        height:80px;
     }
@@ -132,7 +132,7 @@ export const ProductContainerStyled = styled.div`
     border-radius: 16px;
     object-fit: cover;
   }
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
+  @media only screen and (min-width: 280px) and (max-width: 480px) {
     width: 80%;
     height:100%;
     gap:0;
@@ -154,7 +154,7 @@ export const TextContainerStyled = styled.div`
   flex-direction: column;
   gap: 5px;
   width: 190px;
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
+  @media only screen and (min-width: 280px) and (max-width: 480px) {
       width:100%:
     }
 
@@ -172,7 +172,7 @@ export const CardTitleStyled = styled.h3`
     border-radius:3px;
 
   }
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
+  @media only screen and (min-width: 280px) and (max-width: 480px) {
     font-weight: 400;
       font-size: 0.5rem;
       background-color:transparent;
@@ -184,7 +184,7 @@ export const TextStyled = styled.p`
   margin: 0;
   color: #666;
   font-size: 1rem;
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
+  @media only screen and (min-width: 280px) and (max-width: 480px) {
     display: none;
   }
 `;
@@ -196,7 +196,7 @@ export const PriceStyled = styled.span`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
+  @media only screen and (min-width: 280px) and (max-width: 480px) {
     margin-left: 2.5rem; 
     font-size:15px;
     font-weigth: 400;
@@ -213,7 +213,7 @@ export const PriceContainerStyled = styled.div`
     margin-bottom: 0;
   }
   
-  @media only screen and (min-width: 324px) and (max-width: 1240px) {
+  @media only screen and (min-width: 280px) and (max-width: 1240px) {
     p{
       margin-left: 2rem;
     }
@@ -229,7 +229,7 @@ export const SubtotalStyled = styled.div`
 
 export const EnvioStyled = styled(SubtotalStyled)`
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 280px) and (max-width: 480px) {
    font-size: 0.8rem;
    font-weigth: 400;
 
@@ -238,7 +238,7 @@ export const EnvioStyled = styled(SubtotalStyled)`
 `;
 
 export const TotalStyled = styled(SubtotalStyled)`
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 280px) and (max-width: 480px) {
   font-size: 1rem;
   font-weigth: 400;
 
@@ -251,7 +251,7 @@ export const ButtonContainerStyled = styled(SubtotalStyled)`
   align-item:center;
   width: 200px;
 
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
+  @media only screen and (min-width: 280px) and (max-width: 480px) {
         margin-left: 5rem;
         height: 50px;
  }
@@ -261,7 +261,7 @@ export const QuantityContainerStyled = styled.div`
   display: flex;
   align-items: center;
 
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
+  @media only screen and (min-width: 280px) and (max-width: 480px) {
     font-size: 1rem;
     font-weigth: 400;
  

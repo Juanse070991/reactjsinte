@@ -5,7 +5,7 @@ export const ProductosContainerStyled = styled.div`
   border:3px solid white;
   background:black;
   border-radius:25px;
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
+  @media only screen and (min-width: 280px) and (max-width: 480px) {
     max-width: 320px;
     flex-direction:column;
     width: 95%;
@@ -40,7 +40,7 @@ export const ProductsTitleStyled = styled.h2`
   font-size: 25px;
   color:white;
   margin-left:10px;
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
+  @media only screen and (min-width: 280px) and (max-width: 480px) {
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -80,7 +80,7 @@ export const CardsWrapperStyled = styled.div`
     display: none;
   }
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 280px) and (max-width: 480px) {
    heigth: 100%;
    gap:0px;
    margin:0px auto;
@@ -109,7 +109,7 @@ export const PriceContainerStyled = styled.div`
   font-size: 1rem;
   font-weight:600;
 
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
+  @media only screen and (min-width: 280px) and (max-width: 480px) {
    
   }
 `;

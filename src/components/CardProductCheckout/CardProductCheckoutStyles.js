@@ -16,7 +16,7 @@ export const CardContainerStyled = styled.div`
     border-radius: 16px;
     object-fit: cover;
   }
-  @media screen and (min-width: 320px) and (max-width: 480px){
+  @media screen and (min-width: 280px) and (max-width: 480px){
     flex-direction: column;
     justify-content:center;
     border:3px solid white;

@@ -4,7 +4,7 @@ import { Formik as FormikContainer, Form as FormikForm } from 'formik';
 
 export const CheckoutDatosStyled = styled.div`
  
-  @media screen and (min-width: 320px) and (max-width: 480px){
+  @media screen and (min-width: 280px) and (max-width: 480px){
     max-width: 480px;
     disaplay:flex;
     flex-direction:column;
@@ -44,7 +44,7 @@ export const Formik = styled(FormikContainer)`
   color:rgba(250,250,250,0.9);
  
  
-  @media only screen and (min-width: 320px) and (max-width: 480px) {  
+  @media only screen and (min-width: 280px) and (max-width: 480px) {  
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -64,7 +64,7 @@ export const Form = styled(FormikForm)`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  @media only screen and (min-width: 320px) and (max-width: 480px) {  
+  @media only screen and (min-width: 280px) and (max-width: 480px) {  
     max-width:480px;
     width: 400px;
     height:800px;

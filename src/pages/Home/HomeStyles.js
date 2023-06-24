@@ -10,7 +10,7 @@ h2 {
   font-weight: 400;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 280px) and (max-width: 480px) {
   max-width:480px;
   width: 100%;
   padding: 0px;
@@ -49,7 +49,7 @@ export const CategoriasWrapper = styled.section`
     align-item:center;
     color: white;
   }
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
+  @media only screen and (min-width: 280px) and (max-width: 480px) {
     width:100%;
     max-width: 320px;
     heigth: 100%;
@@ -94,7 +94,7 @@ export const ProductosWrapper = styled.section`
   @media only screen and (max-width: 1000px) and (min-width: 624px) {
   }
 
-  @media (min-width: 320px) and (max-width: 480px){
+  @media (min-width: 280px) and (max-width: 480px){
      justify-content: center;
      background-size: 80%;
   border-radius: 10px;
@@ -122,7 +122,7 @@ export const RecomendadosWrapper = styled.section`
    }
   }
 
-  @media (min-width: 320px) and (max-width: 480px){
+  @media (min-width: 280px) and (max-width: 480px){
     text-align: center;
     h2{
      font-weigth: 400;

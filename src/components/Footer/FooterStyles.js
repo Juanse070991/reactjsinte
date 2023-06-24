@@ -11,7 +11,7 @@ export const FooterContainerStyled = styled.footer`
     border-radius: 5px;
   }
 
-  @media screen and (min-width: 320px) and (max-width: 480px){
+  @media screen and (min-width: 280px) and (max-width: 480px){
     background-color: black;
     flex-direction:column;
     gap: 3rem 1rem;
@@ -51,7 +51,7 @@ export const LinksContainerStyled = styled.div`
   justify-content: center;
   width:25%;
   
-  @media screen and (min-width: 320px) and (max-width: 480px){
+  @media screen and (min-width: 280px) and (max-width: 480px){
     margin-right: 2.7rem;
     width:100%;
     & a:hover{
@@ -88,7 +88,7 @@ span{
   margin: 10px 30px;
 }
   
-   @media screen and (min-width: 320px) and (max-width: 480px){
+   @media screen and (min-width: 280px) and (max-width: 480px){
     flex-direction:row;
     width:100%;
     align-item: center;
@@ -143,7 +143,8 @@ span{
     margin-top: 2px;
 
   }
-  @media screen and (min-width: 320px) and (max-width: 480px){
+
+  @media screen and (min-width: 280px) and (max-width: 480px){
     gap: 15px;
     width:100%;
     margin-left:1.5rem;

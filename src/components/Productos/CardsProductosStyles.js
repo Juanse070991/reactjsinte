@@ -30,7 +30,7 @@ export const ProductosCard = styled.div`
     color: gray;
     font-size: 1.2rem;
   }
-  @media (min-width: 320px) and (max-width: 480px){
+  @media (min-width: 280px) and (max-width: 480px){
    width:180px;
    height:280px;
    margin-right: 1rem;
@@ -50,7 +50,7 @@ export const ContainerPrice = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media (min-width: 320px) and (max-width: 480px){
+  @media (min-width: 280px) and (max-width: 480px){
     
     flex-wrap: wrap;
     align-item: center;
@@ -68,7 +68,7 @@ export const CardPrice = styled.span`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  @media (min-width: 320px) and (max-width: 480px){
+  @media (min-width: 280px) and (max-width: 480px){
   font-size: 1rem;
   }
  

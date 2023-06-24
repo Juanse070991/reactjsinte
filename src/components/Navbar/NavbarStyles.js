@@ -10,7 +10,7 @@ justify-content: space-between;
 align-items: center;
 padding: 1rem 4rem;
 
-@media (min-width: 320px) and (max-width: 480px){
+@media (min-width: 280px) and (max-width: 480px){
   justify-content: space-around;
   margin: 10px 0px;
   max-width: 480px;
@@ -65,7 +65,7 @@ align-items:center;
 justify-content: space-between;
 margin: 20px auto;
 
-@media (min-width: 320px) and (max-width: 480px){
+@media (min-width: 280px) and (max-width: 480px){
   width: 100%;
   max-width:480px;
  justify-content: space-around;
@@ -101,7 +101,7 @@ font-size: 1.2rem;
   
  
  }
- @media (min-width: 320px) and (max-width: 480px){
+ @media (min-width: 280px) and (max-width: 480px){
  img{
   width:70px;
   heigth:70px;
@@ -136,7 +136,7 @@ a:first-child {
   gap: 5px;
 }
 
-@media (min-width: 320px) and (max-width: 480px){
+@media (min-width: 280px) and (max-width: 480px){
   max-width:480px;
   width:100%;
   justify-content: space-around;
@@ -175,7 +175,7 @@ align-items: center;
 list-style: none;
 
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 280px) and (max-width: 480px) {
   background:black;
   position: absolute;
   top: 70px;
@@ -231,7 +231,7 @@ width: 100%;
 margin: 0 auto;
 background-color: black;
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 280px) and (max-width: 480px) {
 height:100vh;
 width:100%;
 justify-content:center;
@@ -255,7 +255,7 @@ transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 280px) {
  flex-direction: column;
  justify-content: center;
  width:100%;
@@ -298,7 +298,7 @@ export const MobileIcon = styled.div`
   
   }
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 280px) and (max-width: 480px) {
     font-size: 1.5rem;
     
   } 
@@ -349,7 +349,7 @@ export const UserNavStyled = styled.div`
     font-size: 1rem;
     margin-right: 20px;
   }
-  @media screen and (max-width:320px) and (min-width: 769px) {
+  @media screen and (max-width:280px) and (min-width: 769px) {
    display: none;
    }
   
@@ -371,7 +371,7 @@ export const SpanStyled = styled.span`
   }
   
 
-  @media screen and (min-width: 320px) and (max:width 768px) {
+  @media screen and (min-width: 280px) and (max:width 768px) {
    display: none;
    }
 `;
