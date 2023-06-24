@@ -22,7 +22,7 @@ export const CategoriasContainer = styled.div`
   @media (min-width: 280px) and (max-width: 480px){
     display:flex;
     width:100%;
-    flex-wrap: wrap;
+    flex-direction:column;
     justify-content: center;
     alig-items: center;
     height:100%;
@@ -83,7 +83,6 @@ export const CardCategoria = styled(motion.div)`
   }
 
   @media (min-width: 280px) and (max-width: 480px){
-    margin-right: 2.4rem;
     height: 180px;
     width:160px;
   h2 {

@@ -3,16 +3,16 @@ import { motion } from 'framer-motion';
 
 export const NavbarContainerStyled = styled.div`
 height: 100px;
-width: 100%;
+width: 100vh;
 background-color:  rgb(0, 0, 0);
 display: flex;
-justify-content: space-between;
+flex-direction:row;
+justify-content: space-around;
 align-items: center;
 padding: 1rem 4rem;
 
 @media (min-width: 280px) and (max-width: 480px){
   justify-content: space-around;
-  margin: 10px 0px;
   max-width: 480px;
   padding: 0px 0px;
   width:100%;
@@ -21,10 +21,9 @@ padding: 1rem 4rem;
 }
 @media (min-width: 481px) and (max-width: 767px){
   justify-content: space-around;
-  margin: 10px 0px;
   max-width: 481px;
   padding: 0px 0px;
-  width:100%;
+  width:100vh;
 
 }
 
@@ -372,7 +371,7 @@ export const SpanStyled = styled.span`
   
 
   @media screen and (min-width: 280px) and (max:width 768px) {
-   display: none;
+   background-color:green;
    }
 `;
 

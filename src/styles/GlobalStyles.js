@@ -65,6 +65,7 @@ export const GlobalStyles = createGlobalStyle`
     scroll-behavior: smooth;
   }
     body {
+    width:100%;
     margin: 0;
     padding: 0;
     box-size: border-box;
@@ -73,11 +74,6 @@ export const GlobalStyles = createGlobalStyle`
     color: white;
     -webkit-tap-highlight-color: transparent;
     overflow-x: hidden 
-    
-    @media (min-width: 320px) and (max-width: 480px){
-      background-image: none;
-      backgrounda-color: black;
-    }
     a {
     text-decoration: none;
     }
@@ -86,6 +82,9 @@ export const GlobalStyles = createGlobalStyle`
     }
     li {
     list-style: none;
+    }
+    @media screen and (min-width: 280px) and (max-width:480px){
+        width:100%;
     }
 
     

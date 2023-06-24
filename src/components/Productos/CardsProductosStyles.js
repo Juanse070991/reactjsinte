@@ -1,15 +1,13 @@
 import styled from 'styled-components';
 
 export const ProductosContainer = styled.div`
-  display: grid;
-  place-items: center;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, 400px);
-  row-gap: 3.5rem;
-  width: 100%;
-  padding: 1rem 0;
-  
-  }
+display: grid;
+place-items: center;
+justify-content: center;
+grid-template-columns: repeat(auto-fit, 400px);
+row-gap: 3.5rem;
+width: 100%;
+padding: 1rem 0;
 
 `;
 
@@ -36,9 +34,10 @@ export const ProductosCard = styled.div`
    margin-right: 1rem;
    img{
     width:100%;
+    height:120px;
    }
    h2{
-
+       
    }
    p{
     font-size:0.8rem;
@@ -51,12 +50,12 @@ export const ContainerPrice = styled.div`
   justify-content: space-between;
 
   @media (min-width: 280px) and (max-width: 480px){
-    
-    flex-wrap: wrap;
+    flex-direction: column;
+    height:80px;
+    justify-content: space-around;
     align-item: center;
-    margin-left: 1.6rem ;
-    margin-top: 1rem;
-    margin-bottom: 1.3rem;
+    padding: 10px auto;
+  
     
   }
 `;
@@ -70,6 +69,7 @@ export const CardPrice = styled.span`
 
   @media (min-width: 280px) and (max-width: 480px){
   font-size: 1rem;
+ 
   }
  
 `;

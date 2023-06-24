@@ -22,7 +22,7 @@ export const ModalContainerStyled = styled(motion.div)`
     }
   }
 
-  @media screen and (min-width: 320px) and (max-width: 1240px){
+  @media screen and (min-width: 280px) and (max-width: 1240px){
     width: 130px;
   }
 `;

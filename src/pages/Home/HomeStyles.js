@@ -35,6 +35,8 @@ h2 {
 
 export const CategoriasWrapper = styled.section`
   display: flex;
+  justify-content:center;
+  align-item: center;
   max-width: 100%;
   flex-direction: column;
   margin-top: 8rem;
@@ -61,9 +63,10 @@ export const CategoriasWrapper = styled.section`
 
   @media screen and (min-width: 481px) and (max-width: 767px) {
     max-width:481px;
+    heigth: 100%;
     h2{
       font-size: 1.2rem;
-      font-weigth: 600;
+      font-weigth: 800;
     }
   }
   
@@ -116,7 +119,6 @@ export const RecomendadosWrapper = styled.section`
     font-weigth: 400;
     font-size: 1.5rem;
     margin-top: 40px;
-    background-color: red;
     border-radius:5px solid white;
     border: 3px;
    }
@@ -130,7 +132,6 @@ export const RecomendadosWrapper = styled.section`
      margin-top: 40px;
      border-radius:5px;
      border: solid white 2px; 
-     background-color: red;
      width:100%;    
 `;
 
