@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export const NavbarContainerStyled = styled.div`
 height: 100px;
-width: 100vh;
+width: 100%;
 background-color:  rgb(0, 0, 0);
 display: flex;
 flex-direction:row;
