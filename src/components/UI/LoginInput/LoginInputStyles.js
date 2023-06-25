@@ -3,6 +3,11 @@ import styled from 'styled-components';
 export const InputContainerStyled = styled.div`
   display: flex;
   flex-direction: column;
+  @media screen and (min-width: 280px) and (max-width: 481px){
+    max-width: 481px;
+    width: 90%;
+    margin: 0 auto;
+  }
 `;
 
 export const LoginInputStyled = styled.input`
@@ -22,6 +27,12 @@ export const LoginInputStyled = styled.input`
   :-webkit-autofill:hover,
   :-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0px 1000px var(--gray-bg) inset;
+  }
+  @media screen and (min-width: 280px) and (max-width: 481px){
+    max-width: 481px;
+    width: 150px;
+    margin: 0 auto;
+ 
   }
 `;
 

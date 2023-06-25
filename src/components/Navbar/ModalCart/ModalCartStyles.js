@@ -27,11 +27,16 @@ export const ContainerStyled = styled(motion.div)`
     height: calc(100vh - 3.5rem);
     }
 
-    @media only screen and (min-width: 768px) and (max-width: 1024px) {
-      height: calc(100vh - 12rem);
+    @media only screen and (min-width: 768px) and (max-width: 1200px) {
+      height: calc(100vh - 4rem);
      
       ;
    }
+   @media only screen and (min-width: 1201px) and (max-width: 1650px) {
+    height: calc(100vh - 26rem);
+   
+    ;
+ }
 `;
 
 export const CloseButtonContainerStyled = styled.div`
@@ -59,6 +64,9 @@ export const CloseButtonStyled = styled(motion.button)`
     height: 1.3rem;
     
     }
+    @media only screen and (min-width: 1201px) and (max-width: 1650px) {
+    
+    }
   
 `;
 
@@ -66,7 +74,7 @@ export const TitleStyled = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 0 0 2rem 0;
+  margin: 0 auto;
   & h1 {
     margin-top: 1px;
   }
@@ -84,6 +92,12 @@ export const MainContainerStyled = styled.div`
    margin-left: 2rem;
    height: 40%;
     }
+
+    @media only screen and (min-width: 1201px) and (max-width: 1650px) {
+      height:100%;
+     
+      ;
+   }
 `;
 
 export const ProductsWrapperStyled = styled.div`
@@ -111,6 +125,9 @@ export const ProductsWrapperStyled = styled.div`
     gap:none;
        height:80px;
     }
+    @media only screen and (min-width: 1201px) and (max-width: 1650px) {
+      
+      }
 
 `;
 
@@ -147,6 +164,9 @@ export const ProductContainerStyled = styled.div`
       object-fit: cover;
     }
   }
+
+  
+
 `;
 
 export const TextContainerStyled = styled.div`
@@ -218,6 +238,9 @@ export const PriceContainerStyled = styled.div`
       margin-left: 2rem;
     }
   }
+  @media only screen and (min-width: 1201px) and (max-width: 1650px) {
+   
+    }
 `;
 
 export const SubtotalStyled = styled.div`
@@ -266,4 +289,5 @@ export const QuantityContainerStyled = styled.div`
     font-weigth: 400;
  
    }
+   
 `;

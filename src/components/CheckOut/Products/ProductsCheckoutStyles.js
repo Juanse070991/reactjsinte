@@ -5,6 +5,7 @@ export const ProductosContainerStyled = styled.div`
   border:3px solid white;
   background:black;
   border-radius:25px;
+
   @media only screen and (min-width: 280px) and (max-width: 480px) {
     max-width: 320px;
     flex-direction:column;
@@ -17,19 +18,27 @@ export const ProductosContainerStyled = styled.div`
   @media only screen and (min-width: 481px) and (max-width: 767px) {
     max-width: 767px;
     flex-direction:row;
-    width: 95%;
-    height:100%;
-    margin-top:50px;
+    width: 100%;
+    height:100vh;
+    margin-top:30px;
     padding:3px 3px;
+   
     
   }
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    max-width: 1024px;
-    flex-direction:row;
-    width: 95%;
-    height:100%;
-    margin-top:80px;
-    padding:3px 3px;
+  @media only screen and (min-width: 768px) and (max-width: 1200px) {
+    width: 100%;
+    border:3px solid white;
+    background:black;
+    border-radius:25px;
+    margin-top:65px;
+    
+  }
+  @media only screen and (min-width: 1201px) and (max-width: 1650px) {
+    width: 100%;
+    border:3px solid white;
+    background:black;
+    border-radius:25px;
+    margin-top:65px;
     
   }
 
@@ -44,7 +53,7 @@ export const ProductsTitleStyled = styled.h2`
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin : 25px 80px;
+    margin : 25px 60px;
     
   }
 
@@ -52,9 +61,27 @@ export const ProductsTitleStyled = styled.h2`
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin : 25px 80px;
+    max-width: 767px;
+    text-align: center;
     
   }
+
+  @media only screen and (min-width: 768px) and (max-width: 1200px) {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 1201px) and (max-width: 1650px) {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1650px;
+    text-align: center;
+  }
+
     `;
 
 export const CardsWrapperStyled = styled.div`
@@ -96,6 +123,10 @@ export const CardsWrapperStyled = styled.div`
      }
   }
 
+  @media only screen and (min-width: 1201px) and (max-width: 1650px) {
+    
+  }
+
 `;
 
 export const PriceContainerStyled = styled.div`
@@ -124,7 +155,7 @@ export const SubtotalStyled = styled.div`
 export const EnvioStyled = styled(SubtotalStyled)``;
 
 export const TotalStyled = styled(SubtotalStyled)`
-color:
+
 
 `;
 

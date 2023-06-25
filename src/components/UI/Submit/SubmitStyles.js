@@ -16,4 +16,16 @@ export const ButtonSubmitStyled = styled(motion.button)`
     cursor: not-allowed;
     opacity: 0.5;
   }
+
+  @media screen and (min-width: 280px) and (max-width: 480px){
+    margin: 15px auto;
+   }
+
+   @media screen and (min-width: 481px) and (max-width: 767px){
+    margin: 15px auto;
+   }
+
+   @media screen and (min-width: 768px) and (max-width: 1200px){
+    margin: 15px auto;
+   }
 `;

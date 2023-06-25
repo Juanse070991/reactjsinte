@@ -6,14 +6,14 @@ export const CheckoutDatosStyled = styled.div`
  
   @media screen and (min-width: 280px) and (max-width: 480px){
     max-width: 480px;
+    width:100%;
     disaplay:flex;
     flex-direction:column;
     justify-content:center;
     align-item: center;
     flex-wrap: wrap;
     & h2{
-      font-size: 1rem;
-      margin-right:8rem;
+      font-size: 1.2rem;
       text-align: center;
     }
 
@@ -22,8 +22,14 @@ export const CheckoutDatosStyled = styled.div`
       background-color:red;
     
   }
-  @media screen and (min-width: 768px) and (max-width: 1024px){
-    max-width: 1024px;
+  @media screen and (min-width: 768px) and (max-width: 1200px){
+    max-width: 1200px;
+    width:100%;
+    disaplay:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-item: center;
+    flex-wrap: wrap;
     background-color: red;
     h2{
       font-size: 1.5rem;

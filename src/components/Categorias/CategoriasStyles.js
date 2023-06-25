@@ -12,7 +12,15 @@ export const CategoriasContainer = styled.div`
   gap: 20px;
   user-select: none;
 
-  @media (min-width: 769px) and (max-width: 1024px){
+  @media (min-width: 1200px) and (max-width: 1650px){
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    alig-items: center;
+    height:100%;
+  }
+
+  @media (min-width: 768px) and (max-width: 1200px){
     display:flex;
     flex-wrap: wrap;
     justify-content: center;

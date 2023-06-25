@@ -15,6 +15,16 @@ export const ContainerCheckoutStyled = styled.div`
     height:100%;
     padding: 2rem 0;
   }
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    justify-content: none;
+    flex-direction:column;
+    align-items: none;
+    max-width: 767px;
+    width: 90%;
+    margin: 0px auto;
+    height:100%;
+    padding: 2rem 0.5rem;
+  }
   
 `;
 

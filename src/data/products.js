@@ -204,7 +204,7 @@ export const products = [
   {
     id: 26,
     title:'Peavy vypyr100-bodcal',
-    img: 'https://res.cloudinary.com/ddfzor3mh/image/upload/v1678315012/peavy-vypyr100_bodcal.jpg',
+    img: 'https://res.cloudinary.com/ddfzor3mh/image/upload/c_scale,e_boomerang,h_600,w_800/v1678315012/peavy-vypyr100_bodcal.jpg',
     desc: 'resaca de mono',
     price: '300000',
     category: 'amplificador',
