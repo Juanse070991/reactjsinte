@@ -4,18 +4,15 @@ import { Formik as FormikContainer, Form as FormikForm } from 'formik';
 
 export const CheckoutDatosStyled = styled.div`
  
-  @media screen and (min-width: 280px) and (max-width: 480px){
-    max-width: 480px;
+  @media screen and (min-width: 320px) and (max-width: 417px){
+    max-width: 417px;
     width:100%;
-    disaplay:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-item: center;
-    flex-wrap: wrap;
     & h2{
       font-size: 1.2rem;
+      font-weitgh: 800;
       text-align: center;
     }
+  }
 
     @media screen and (min-width: 481px) and (max-width: 767px){
       max-width: 767px;
@@ -23,19 +20,7 @@ export const CheckoutDatosStyled = styled.div`
     
   }
   @media screen and (min-width: 768px) and (max-width: 1200px){
-    max-width: 1200px;
-    width:100%;
-    disaplay:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-item: center;
-    flex-wrap: wrap;
-    background-color: red;
-    h2{
-      font-size: 1.5rem;
-      text-align: center;
-      margin-right: 6rem;
-    }
+    
   }
    
    
@@ -46,16 +31,18 @@ export const CheckoutDatosStyled = styled.div`
 export const Formik = styled(FormikContainer)`
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   color:rgba(250,250,250,0.9);
  
- 
-  @media only screen and (min-width: 280px) and (max-width: 480px) {  
+  @media only screen and (min-width: 320px) and (max-width: 417px) {  
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     color:rgba(250,250,250,0.9);
+    width: 200px;
+    
   }
+
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) {  
     display: flex;
@@ -70,14 +57,16 @@ export const Form = styled(FormikForm)`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  @media only screen and (min-width: 280px) and (max-width: 480px) {  
-    max-width:480px;
-    width: 400px;
-    height:800px;
+
+  @media screen and (min-width: 320px) and (max-width: 417px) {  
+    max-width:417px;
+    width:100%;
+    height:100%;
     justify-content: center;
     align-item:center;
     flex-direction: column;
     padding:2rem 2rem;
+    
     
   }
 

@@ -6,13 +6,13 @@ export const ProductosContainerStyled = styled.div`
   background:black;
   border-radius:25px;
 
-  @media only screen and (min-width: 280px) and (max-width: 480px) {
-    max-width: 320px;
+  @media screen and (min-width: 320px) and (max-width: 417px) {
     flex-direction:column;
-    width: 95%;
+    align-item:center;
+    width: 90%;
+    margin: 0 auto;
     height:100%;
-    margin-top:50px;
-    padding:3px 3px;
+ 
     
   }
   @media only screen and (min-width: 481px) and (max-width: 767px) {
@@ -33,7 +33,7 @@ export const ProductosContainerStyled = styled.div`
     margin-top:65px;
     
   }
-  @media only screen and (min-width: 1201px) and (max-width: 1650px) {
+  @media only screen and (min-width: 1200px) and (max-width: 1600px) {
     width: 100%;
     border:3px solid white;
     background:black;
@@ -49,15 +49,16 @@ export const ProductsTitleStyled = styled.h2`
   font-size: 25px;
   color:white;
   margin-left:10px;
-  @media only screen and (min-width: 280px) and (max-width: 480px) {
+  @media only screen and (min-width: 320px) and (max-width: 417px) {
     justify-content: center;
     align-items: center;
+    text-align:center;
     width: 100%;
-    margin : 25px 60px;
+    
     
   }
 
-  @media only screen and (min-width: 481px) and (max-width: 767px) {
+  @media only screen and (min-width: 417px) and (max-width: 768px) {
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -66,7 +67,7 @@ export const ProductsTitleStyled = styled.h2`
     
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1200px) {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -107,8 +108,9 @@ export const CardsWrapperStyled = styled.div`
     display: none;
   }
 
-  @media screen and (min-width: 280px) and (max-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 417px) {
    heigth: 100%;
+   width:90%;
    gap:0px;
    margin:0px auto;
    & p{

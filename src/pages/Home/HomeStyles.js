@@ -10,8 +10,8 @@ h2 {
   font-weight: 400;
 }
 
-@media screen and (min-width: 280px) and (max-width: 480px) {
-  max-width:480px;
+@media screen and (min-width: 320px) and (max-width: 417px) {
+  max-width:417px;
   width: 100%;
   padding: 0px;
  display:flex;
@@ -19,7 +19,7 @@ h2 {
  justify-content:center;
  flex-direction: column;   
 }
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width: 417px) and (max-width: 768px) {
   max-width:481px;
 }
 
@@ -51,7 +51,7 @@ export const CategoriasWrapper = styled.section`
     align-item:center;
     color: white;
   }
-  @media only screen and (min-width: 280px) and (max-width: 480px) {
+  @media only screen and (min-width: 320px) and (max-width: 417px) {
     width:100%;
     max-width: 320px;
     heigth: 100%;
@@ -61,7 +61,7 @@ export const CategoriasWrapper = styled.section`
     }
   }
 
-  @media screen and (min-width: 481px) and (max-width: 767px) {
+  @media screen and (min-width: 417px) and (max-width: 768px) {
     max-width:481px;
     heigth: 100%;
     h2{
@@ -97,7 +97,7 @@ export const ProductosWrapper = styled.section`
   @media only screen and (max-width: 1000px) and (min-width: 624px) {
   }
 
-  @media (min-width: 280px) and (max-width: 480px){
+  @media (min-width: 320px) and (max-width: 417px){
      justify-content: center;
      background-size: 80%;
   border-radius: 10px;
@@ -113,18 +113,19 @@ export const RecomendadosWrapper = styled.section`
   h2 {
     font-weight: 400;
   }
-  @media only screen and (min-width: 481px) and (max-width: 678px) {
+  @media only screen and (min-width: 417px) and (max-width: 678px) {
    text-align: center;
    h2{
     font-weigth: 400;
     font-size: 1.5rem;
     margin-top: 40px;
     border-radius:5px solid white;
+    
     border: 3px;
    }
   }
 
-  @media (min-width: 280px) and (max-width: 480px){
+  @media (min-width: 320px) and (max-width: 417px){
     text-align: center;
     h2{
      font-weigth: 400;
@@ -132,7 +133,8 @@ export const RecomendadosWrapper = styled.section`
      margin-top: 40px;
      border-radius:5px;
      border: solid white 2px; 
-     width:100%;    
+     width:100%;  
+     background-color: red;  
 `;
 
 export const ButtonContainerStyled = styled.div`

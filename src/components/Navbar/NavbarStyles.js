@@ -11,17 +11,16 @@ justify-content: space-around;
 align-items: center;
 padding: 1rem 4rem;
 
-@media (min-width: 280px) and (max-width: 480px){
+@media (min-width: 320px) and (max-width: 417px){
   justify-content: space-around;
   height:80px;
-  max-width: 480px;
-  padding: 1px 1px;
   width:100%;
- 
+  padding:0px 0px;
+  
   
 
 }
-@media (min-width: 481px) and (max-width: 767px){
+@media (min-width: 417px) and (max-width: 768px){
   justify-content: space-around;
   max-width: 767px;
   padding: 0px 0px;
@@ -29,13 +28,17 @@ padding: 1rem 4rem;
 
 }
 
-@media (min-width: 768px) and (max-width: 1200px){
+@media (min-width: 768px) and (max-width: 1024px){
   justify-content: space-around;
   max-width: 1200px;
   width:100%;
   padding: none;
 }
-@media (min-width: 1201px) and (max-width: 1650px){
+@media (min-width: 1024px) and (max-width: 1200px){
+  justify-content: center;
+  padding: 0px 0px;
+}
+@media (min-width: 1200px) and (max-width: 1600px){
   justify-content: center;
   padding: 0px 0px;
 }
@@ -55,26 +58,27 @@ export const ModalOverlayStyled = styled(motion.div)`
       backdrop-filter: blur(4px);
     `}
    
-   
+  
 `;
 
 export const Wrapper = styled.div`
-max-width:1680px;
+
 width: 100%;
 height: 100%;
 display: flex; 
 flex-directon: row;
 align-items:center;
 justify-content: space-between;
-margin: 20px auto;
+margin:none;
 
-@media (min-width: 280px) and (max-width: 480px){
+@media (min-width: 320px) and (max-width: 417px){
   margin:0px 0px;
- justify-content: space-around;
+  justify-content: left;
+  align-item:center;
  
  }
 
- @media (min-width: 481px) and (max-width: 767px){
+ @media (min-width: 417px) and (max-width: 768px){
   margin:0px 0px;
   justify-content: space-around;
 }
@@ -96,16 +100,14 @@ display: flex;
 align-itmes: center;
 font-size: 1.2rem;
 
-@media (min-width: 280px) and (max-width: 480px){
-  
-  width:80px;
+@media (min-width: 320px) and (max-width: 417px){
   img{
-   width:70px;
-   heigth:70px;
+   width:85px;
+   heigth:85px;
   }
 
 
-  @media (min-width: 481px) and (max-width: 767px){
+  @media (min-width: 417px) and (max-width: 768px){
     width:80px;
        img{
         width:70px;
@@ -146,13 +148,11 @@ a:first-child {
   gap: 5px;
 }
 
-@media (min-width: 280px) and (max-width: 480px){
-  
-  justify-content: space-around;
-  gap:0px;
+@media (min-width: 320px) and (max-width: 417px){
+
 }
 
-@media (min-width: 481px) and (max-width: 767px){
+@media (min-width: 417px) and (max-width: 768px){
   justify-content: space-around;
   gap:0px;
 
@@ -180,10 +180,10 @@ align-items: center;
 list-style: none;
 
 
-@media screen and (min-width: 280px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 417px) {
   background:black;
   position: absolute;
-  top: 70px;
+  top: 62px;
   left: ${({ open }) => (open ? "0" : "-130%" )};
   width: 100%;
   height: 100%;
@@ -194,7 +194,7 @@ list-style: none;
   
 }
 
-@media (min-width: 481px) and (max-width: 767px){
+@media (min-width: 417px) and (max-width: 768px){
   background:black;
   position: absolute;
   top: 70px;
@@ -236,13 +236,14 @@ width: 100%;
 margin: 0 auto;
 background-color: black;
 
-@media screen and (min-width: 280px) and (max-width: 480px) {
-height:100px;
+@media screen and (min-width: 320px) and (max-width: 417px) {
+height:100%;
 width:100%;
 justify-content:center;
+aling-item: center;
 
 }
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width: 417px) and (max-width: 768px) {
   height:100px;
   width:100%;
   justify-content:center;
@@ -267,15 +268,15 @@ transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
 
-@media only screen and (max-width: 280px) {
+@media screen and (min-width: 320px) and (max-width: 417px) {
  flex-direction: column;
  justify-content: center;
  width:100%;
- padding: 0.5rem 2.5rem;
+
 
 }
 
-@media (min-width: 767px){
+@media (min-width: 768px){
   flex-direction: column;
   justify-content: center;
   width:100%;
@@ -293,7 +294,7 @@ transition: 0.5s all ease;
 export const MobileIcon = styled.div`
   display: none;
 
-  @media only screen and (max-width:1024px) {
+  @media screen and (min-width: 768px) and (max-width:1024px) {
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -304,17 +305,19 @@ export const MobileIcon = styled.div`
     
   }
   
-  @media (min-width: 481px) and (max-width: 767px){
+  @media (min-width: 417px) and (max-width: 768px){
     font-size: 1.8rem;
     margin-left: 13rem;
   }
 
   
 
-  @media screen and (min-width: 280px) and (max-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 417px) {
     font-size: 2rem;
+    display: flex;
     width:100%;
-    margin-left: 6.5rem;
+    margin:auto 10px;
+    justify-content: right;
     
     
   } 
@@ -332,8 +335,9 @@ export const LinkContainerStyled = styled.div`
 /* inicio de secion*/
 export const UserContainerStyled = styled(LinkContainerStyled)`
   display: flex;
+  justify-content:center;
   align-items: center;
- widht:100%;
+  widht:100%;
  
 `;
 
@@ -365,8 +369,10 @@ export const UserNavStyled = styled.div`
     font-size: 1rem;
     margin-right: 20px;
   }
-  @media screen and (max-width:280px) and (min-width: 769px) {
-   display: none;
+  @media screen and (min-width:320px) and (max-width: 417px) {
+    display-flex;
+    flex-direction:column;
+    align-item: center;
    }
   
   
@@ -387,7 +393,7 @@ export const SpanStyled = styled.span`
   }
   
 
-  @media screen and (min-width: 280px) and (max:width 768px) {
+  @media screen and (min-width: 320px) and (max-width 417px) {
    background-color:green;
    }
 `;

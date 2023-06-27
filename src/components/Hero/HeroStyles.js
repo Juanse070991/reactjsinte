@@ -63,7 +63,7 @@ export const HeroBtnStyled = styled.input`
   cursor: pointer;
  
 
-  @media screen and (min-width: 280px) {
+  @media screen and (min-width: 320px) {
  margin: 40px auto;
   }
 `;
