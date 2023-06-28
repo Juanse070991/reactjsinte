@@ -10,7 +10,7 @@ export const HeroContainerStyled = styled.div`
   h1 {
     margin-bottom: 2rem;
   }
-  @media only screen and (min-width: 280px) and (max-width: 1250px) {
+  @media only screen and (min-width: 320px) and (max-width: 417px) {
   display:none;
     }
     
@@ -21,10 +21,6 @@ export const HeroFormStyled = styled.form`
   align-items: center;
   gap: 20px;
   
-
-  @media only screen and (max-width: 324px) {
-   display:none;
-  }
 `;
 
 export const HeroSearchBarStyled = styled.input`
@@ -34,7 +30,7 @@ export const HeroSearchBarStyled = styled.input`
   border-radius: 15px;
   padding: 0.5rem 2.3rem;
   color: white;
-  @media only screen and (min-width: 280px) and (max-width: 624px) {
+  @media only screen and (min-width: 320px) and (max-width: 417px) {
  display:none;
   }
  
@@ -46,7 +42,7 @@ export const IconWrapperStyled = styled.div`
   left: 12px;
   font-size: 1.1rem;
 
-  @media only screen and (min-width: 324px) {
+  @media only screen and (min-width: 320px) {
     display:none;
 
 `;

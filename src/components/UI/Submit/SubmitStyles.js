@@ -17,15 +17,15 @@ export const ButtonSubmitStyled = styled(motion.button)`
     opacity: 0.5;
   }
 
-  @media screen and (min-width: 280px) and (max-width: 480px){
+  @media screen and (min-width: 320px) and (max-width: 417px){
+    padding: 0.5rem 1rem;
+   }
+
+   @media screen and (min-width: 417px) and (max-width: 768px){
     margin: 15px auto;
    }
 
-   @media screen and (min-width: 481px) and (max-width: 767px){
-    margin: 15px auto;
-   }
-
-   @media screen and (min-width: 768px) and (max-width: 1200px){
+   @media screen and (min-width: 768px) and (max-width: 1024px){
     margin: 15px auto;
    }
 `;

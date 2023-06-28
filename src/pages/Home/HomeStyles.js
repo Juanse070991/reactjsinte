@@ -94,8 +94,6 @@ export const ProductosWrapper = styled.section`
   @media only screen and (max-width: 624px) {
     flex-direction: column;
   }
-  @media only screen and (max-width: 1000px) and (min-width: 624px) {
-  }
 
   @media (min-width: 320px) and (max-width: 417px){
      justify-content: center;
@@ -120,13 +118,14 @@ export const RecomendadosWrapper = styled.section`
     font-size: 1.5rem;
     margin-top: 40px;
     border-radius:5px solid white;
-    
     border: 3px;
    }
+
   }
 
-  @media (min-width: 320px) and (max-width: 417px){
+  @media screen and (min-width: 320px) and (max-width: 417px){
     text-align: center;
+    max-width:417px;
     h2{
      font-weigth: 400;
      font-size: 1rem;
