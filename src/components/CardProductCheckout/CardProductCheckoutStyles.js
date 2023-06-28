@@ -16,7 +16,7 @@ export const CardContainerStyled = styled.div`
     border-radius: 16px;
     object-fit: cover;
   }
-  @media screen and (min-width: 280px) and (max-width: 480px){
+  @media (min-width: 320px) and (max-width: 417px){
     flex-direction: column;
     width: 70%;
     margin-right:1rem;
@@ -33,7 +33,7 @@ export const CardContainerStyled = styled.div`
     }
     }
 
-  @media screen and (min-width: 481px) and (max-width: 767px){
+  @media (min-width: 417px) and (max-width: 768px){
     width:90%;
     flex-direction: row;
     justify-content:center;
@@ -57,14 +57,14 @@ export const CardInfoStyled = styled.div`
   gap: 5px;
   width: 240px;
 
-  @media screen and (min-width: 280px) and (max-width: 481px){
+  @media (min-width: 320px) and (max-width: 417px){
     display: flex;
     flex-direction: column;
     gap: 2px;
     width: 100px;
     }
   
-  @media screen and (min-width: 481px) and (max-width: 767px){
+  @media (min-width: 417px) and (max-width: 768px){
     display: flex;
     flex-direction: column;
     gap: 2px;
@@ -77,12 +77,12 @@ export const ProductTitleStyled = styled.h3`
   margin-bottom: 2px;
   font-weight: 500;
 
-  @media screen and (min-width: 280px) and (max-width: 481px){
+  @media (min-width: 320px) and (max-width: 417px){
     font-size: 0.8rem;
     font-weight: 300;
   }
 
-  @media screen and (min-width: 481px) and (max-width: 767px){
+  @media (min-width: 417px) and (max-width: 768px){
     font-size: 0.8rem;
     font-weight: 300;
   }
@@ -95,10 +95,10 @@ export const TextStyled = styled.h3`
   color: #666;
   font-size: 1rem;
 
-  @media screen and (min-width: 280px) and (max-width: 481px){
+  @media (min-width: 320px) and (max-width: 417px){
     font-size: 0.8rem;
   }
-  @media screen and (min-width: 481px) and (max-width: 767px){
+  @media (min-width: 417px) and (max-width: 768px){
     font-size: 0.8rem;
   }
 `;
@@ -111,11 +111,11 @@ export const PriceStyled = styled.span`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  @media screen and (min-width: 280px) and (max-width: 481px){
+  @media (min-width: 320px) and (max-width: 417px){
     font-size:1rem;
    }
 
-  @media screen and (min-width: 481px) and (max-width: 767px){
+  @media (min-width: 417px) and (max-width: 768px){
    font-size:1rem;
   }
 `;
@@ -124,12 +124,12 @@ export const QuantityContainerStyled = styled.span`
   display: flex;
   align-items: center;
 
-  @media screen and (min-width: 280px) and (max-width: 481px){
+  @media (min-width: 320px) and (max-width: 417px){
     width:25px;
     justify-content:center;
     heigth:25px;
   }
-  @media screen and (min-width: 481px) and (max-width: 767px){
+  @media (min-width: 417px) and (max-width: 768px){
     width:25px;
     justify-content:right;
     heigth:25px;
