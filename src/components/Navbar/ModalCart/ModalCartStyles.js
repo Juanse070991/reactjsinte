@@ -30,21 +30,19 @@ export const ContainerStyled = styled(motion.div)`
 
     @media and (min-width: 768px) and (max-width: 1024px) {
       height: calc(100vh - 4rem);
-     
-      ;
+    
    }
+
    @media and (min-width: 1200px) and (max-width: 1600px) {
-    height: calc(100vh - 26rem);
-   
-    ;
- }
+    height: calc(100vh - 4rem);
+  
+ } 
+ 
 `;
 
 export const CloseButtonContainerStyled = styled.div`
   height: 32px;
-  @media and (min-width: 320px) and (max-width: 417px) {
-   
-  }
+  
 `;
 
 export const CloseButtonStyled = styled(motion.button)`
@@ -63,11 +61,6 @@ export const CloseButtonStyled = styled(motion.button)`
   @media (min-width: 320px) and (max-width: 417px) {
     width: 1.5rem;
     heigth: 1rem;
-    }
-
-
-    @media (min-width: 1200px) and (max-width: 1600px) {
-    
     }
   
 `;
@@ -94,13 +87,8 @@ export const MainContainerStyled = styled.div`
    margin-left: 0px;
    height: 40%;
    
-    }
+  }
 
-    @media (min-width: 1200px) and (max-width: 1600px) {
-      height:100%;
-     
-      ;
-   }
 `;
 
 export const ProductsWrapperStyled = styled.div`

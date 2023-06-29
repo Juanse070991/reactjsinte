@@ -9,7 +9,7 @@ display: flex;
 flex-direction:row;
 justify-content: space-around;
 align-items: center;
-padding: 1rem 4rem;
+padding: 1rem 0rem;
 
 @media (min-width: 320px) and (max-width: 417px){
   justify-content: space-around;
@@ -41,9 +41,11 @@ padding: 1rem 4rem;
 }
 @media (min-width: 1200px) and (max-width: 1600px){
   margin: 0 auto;
+  max-width: 1600px;
   padding:0px 0px;
-  justify-content: space-around;
+  justify-content: center;
   width:100%;
+ 
 
 }
 
@@ -106,7 +108,7 @@ margin:none;
 
 @media (min-width: 1200px) and (max-width: 1600px){
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   max-width:1600px;
  padding: 0px 20px;
   margin:0px 0px;
@@ -291,10 +293,7 @@ aling-item: center;
   aling-item: center;
   
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    
-    
-    }
+  
 
   
 

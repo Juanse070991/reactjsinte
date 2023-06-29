@@ -47,14 +47,41 @@ export const HeroContainerStyled = styled.div`
 `;
 
 export const ContenedorGuitarraHero = styled.div` 
+@media (min-width: 1200px) and (max-width: 1600px) {
+  width:80%;
+  margin:20px auto;
+   img{
+     width:100%;
+     
+   }
+ } 
+
 @media (min-width: 1024px) and (max-width: 1200px) {
  width:100%;
  margin:20px auto;
   img{
     width:100%;
-    
   }
 } 
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  width:100%;
+  margin:40px auto;
+   img{
+     width:100%;
+   }
+ } 
+
+
+
+@media (min-width: 320px) and (max-width: 417px) {
+  width:100%;
+  margin:20px auto;
+   img{
+     width:100%;
+     
+   }
+ } 
 
 
 `;
@@ -74,18 +101,18 @@ export const HeroSearchBarStyled = styled.input`
   padding: 0.5rem 2.3rem;
   color: white;
 
-  @media only screen and (min-width: 320px) and (max-width: 417px) {
+  @media (min-width: 320px) and (max-width: 417px) {
  display:none;
   }
-  @media only screen and (min-width: 417px) and (max-width: 768px) {
+  @media (min-width: 417px) and (max-width: 768px) {
       
      
      }
-     @media only screen and (min-width: 768px) and (max-width: 1024px) {
+     @media (min-width: 768px) and (max-width: 1024px) {
       display:none;
         }
 
-        @media only screen and (min-width: 1024px) and (max-width: 1200px) {
+        @media (min-width: 1024px) and (max-width: 1200px) {
           background-color: black;
           outline: none;
           border: none;
@@ -97,28 +124,19 @@ export const HeroSearchBarStyled = styled.input`
 `;
 
 export const IconWrapperStyled = styled.div`
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  font-size: 1.1rem;
+  display:none;
 
   @media (min-width: 417px) and (max-width: 678px) {
-  background-color:red:
+    display:none;
   }
 
   @media (min-width: 1024px) and (max-width: 1200px) {
-    position: absolute;
-  top: 12px;
-  left: 12px;
-  font-size: 1.1rem;
-    }
+    display:none;
+  }
 
-    @media  (min-width: 1201px) and (max-width: 1600px) {
-      position: absolute;
-  top: 12px;
-  left: 12px;
-  font-size: 1.1rem;
-      }
+    @media (min-width: 1200px) and (max-width: 1600px) {
+      display:none;
+  }
 `;
 
 export const HeroBtnStyled = styled.input`
