@@ -10,6 +10,7 @@ import {
   HeroFormStyled,
   HeroSearchBarStyled,
   IconWrapperStyled,
+  ContenedorGuitarraHero,
 } from './HeroStyles';
 
 const Hero = ({ doScroll }) => {
@@ -62,12 +63,12 @@ const Hero = ({ doScroll }) => {
           </Button>
         </HeroFormStyled>
       </div>
-      <div className='foto-guitarras'>
+      <ContenedorGuitarraHero>
         <img
           src='https://res.cloudinary.com/ddfzor3mh/image/upload/c_scale,e_boomerang,h_300,w_600/v1678315086/guitarras-dean_xrgtfy.jpg'
           alt=''
         />
-      </div>
+      </ContenedorGuitarraHero>
     </HeroContainerStyled>
   );
 };

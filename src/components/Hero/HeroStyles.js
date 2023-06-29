@@ -13,7 +13,50 @@ export const HeroContainerStyled = styled.div`
   @media only screen and (min-width: 320px) and (max-width: 417px) {
   display:none;
     }
+
+    @media only screen and (min-width: 417px) and (max-width: 678px) {
+          flex-direction: column;
+          margin: 20px auto;
+          h1{
+            text-align: center;
+            justify-content:a center;
+            align-item:center;
+            font-size: 1.3rem;
+            font-wiegth: 600;
+            
+          }
+        } 
+
+        @media only screen and (min-width: 678px) and (max-width: 1024px) {
+          display:none;
+            }
+
+            @media only screen and (min-width: 1024px) and (max-width: 1200px) {
+              flex-direction: column;
+              margin: 20px auto;
+              h1{
+                text-align: center;
+                justify-content:a center;
+                align-item:center;
+                font-size: 1.3rem;
+                font-wiegth: 600;
+                
+              }
+            } 
     
+`;
+
+export const ContenedorGuitarraHero = styled.div` 
+@media (min-width: 1024px) and (max-width: 1200px) {
+ width:100%;
+ margin:20px auto;
+  img{
+    width:100%;
+    
+  }
+} 
+
+
 `;
 
 export const HeroFormStyled = styled.form`
@@ -30,9 +73,26 @@ export const HeroSearchBarStyled = styled.input`
   border-radius: 15px;
   padding: 0.5rem 2.3rem;
   color: white;
+
   @media only screen and (min-width: 320px) and (max-width: 417px) {
  display:none;
   }
+  @media only screen and (min-width: 417px) and (max-width: 768px) {
+      
+     
+     }
+     @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      display:none;
+        }
+
+        @media only screen and (min-width: 1024px) and (max-width: 1200px) {
+          background-color: black;
+          outline: none;
+          border: none;
+          border-radius: 15px;
+          padding: 0.5rem 2.3rem;
+          color: white;
+            }
  
 `;
 
@@ -42,9 +102,23 @@ export const IconWrapperStyled = styled.div`
   left: 12px;
   font-size: 1.1rem;
 
-  @media only screen and (min-width: 320px) {
-    display:none;
+  @media (min-width: 417px) and (max-width: 678px) {
+  background-color:red:
+  }
 
+  @media (min-width: 1024px) and (max-width: 1200px) {
+    position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 1.1rem;
+    }
+
+    @media  (min-width: 1201px) and (max-width: 1600px) {
+      position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 1.1rem;
+      }
 `;
 
 export const HeroBtnStyled = styled.input`
@@ -59,7 +133,7 @@ export const HeroBtnStyled = styled.input`
   cursor: pointer;
  
 
-  @media screen and (min-width: 320px) {
- margin: 40px auto;
+  @media (min-width: 417px) and (max-width: 768px) {
+       
   }
 `;
