@@ -11,16 +11,16 @@ export const FooterContainerStyled = styled.footer`
     border-radius: 5px;
   }
 
-  @media screen and (min-width: 280px) and (max-width: 480px){
+  @media (min-width: 320px) and (max-width: 417px){
     background-color: black;
     flex-direction:column;
     gap: 3rem 1rem;
     justify-content:center;
     
   }
-  @media screen and (min-width: 481px) and (max-width: 767px){
+  @media (min-width: 417px) and (max-width: 768px){
     background-color: black;
-    max-width: 767px;
+    
     flex-direction:column;
     height:100%;
     width:100%;
@@ -29,17 +29,21 @@ export const FooterContainerStyled = styled.footer`
     
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1024px){
+  @media (min-width: 768px) and (max-width: 1024px){
     background-color: black;
-    max-width: 767px;
+    
     flex-direction:column;
     height:100%;
     width:100%;
-    
     justify-content:center;
-    
+  }
+  @media (min-width: 1024px) and (max-width: 1200px){
+    background-color: black;
    
-    
+    flex-direction:column;
+    height:100%;
+    width:100%;
+    justify-content:space-between;
   }
 `;
 
@@ -51,7 +55,7 @@ export const LinksContainerStyled = styled.div`
   justify-content: center;
   width:25%;
   
-  @media screen and (min-width: 280px) and (max-width: 480px){
+  @media (min-width: 320px) and (max-width: 417px){
     margin-right: 2.7rem;
     width:100%;
     & a:hover{
@@ -60,14 +64,14 @@ export const LinksContainerStyled = styled.div`
       transition: 1.2s;
     }
  
-    @media screen and (min-width: 481px) and (max-width: 767px){
+    @media (min-width: 417px) and (max-width: 768px){
       background-color: white;
       margin-right: 2rem;
       width:100%;
       max-width: 767px;
 
     }
-    @media screen and (min-width: 768px) and (max-width: 1024px){
+    @media (min-width: 768px) and (max-width: 1024px){
       background-color: white;
       margin-right: 2rem;
       width:100%;
@@ -88,7 +92,7 @@ span{
   margin: 10px 30px;
 }
   
-   @media screen and (min-width: 280px) and (max-width: 480px){
+   @media (min-width: 320px) and (max-width: 417px){
     flex-direction:row;
     width:100%;
     align-item: center;
@@ -98,8 +102,14 @@ span{
      }
   }
 
-  @media screen and (min-width: 481px) and (max-width: 767px){
-   display:none;
+  @media (min-width: 417px) and (max-width: 768px){
+    flex-direction:row;
+    width:100%;
+    align-item: center;
+    justify-content:space-around;
+    span{
+      flex-direction:row;
+     }
   }
   
   `;
@@ -123,7 +133,7 @@ span{
    
     height:100%;
   } 
-  @media screen and (max-width: 480px){
+  @media (min-width: 320px) and (max-width: 417px){
     width:100%;
     margin-left: 5rem;
     align-item:center;
@@ -144,7 +154,7 @@ span{
 
   }
 
-  @media screen and (min-width: 280px) and (max-width: 480px){
+  @media (min-width: 320px) and (max-width: 417px){
     gap: 15px;
     width:100%;
     margin-left:1.5rem;
@@ -153,7 +163,7 @@ span{
     & img{
       font-size: 1.1rem;
     }
-    @media screen and (min-width: 768px) and (max-width: 1024px){
+    @media (min-width: 768px) and (max-width: 1024px){
       gap: 15px;
       width:100%;
       margin-left:1.5rem;

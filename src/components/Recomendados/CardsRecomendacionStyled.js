@@ -19,13 +19,13 @@ export const CardsContainer = styled.div`
     display: none;
   }
 
-  @media only screen and (min-width: 320px) and (max-width: 417px) {
+  @media (min-width: 320px) and (max-width: 417px) {
     font-weight: 800;
     font-size: 1rem;
     width:100%;
   }
 
-  @media only screen and (min-width: 480px) and (max-width: 768px) {
+  @media (min-width: 417px) and (max-width: 768px) {
     font-weight: 800;
     font-size: 1rem;
     width:100%;
@@ -45,7 +45,7 @@ export const Card = styled.div`
   border-radius: 15px;
   border: 3px solid  rgba(250,250,250,0.9);
 
-  @media only screen and (min-width: 320px) and (max-width: 417px) {
+  @media (min-width: 320px) and (max-width: 417px) {
     height: 300px;
     flex-direction:column;
     justify-content: space-around;
@@ -53,7 +53,7 @@ export const Card = styled.div`
     margin:0 auto;
   }
 
-  @media only screen and (min-width: 417px) and (max-width: 768px) {
+  @media (min-width: 417px) and (max-width: 768px) {
     height: 300px;
     flex-direction:column;
     justify-content: space-around;
@@ -68,7 +68,7 @@ export const CardImg = styled.img`
   border-radius: 16px;
   object-fit: cover;
   
-  @media only screen and (min-width: 320px) and (max-width: 417px) {
+  @media (min-width: 320px) and (max-width: 417px) {
     width:150px;
   height: 100px;
   }
@@ -95,12 +95,12 @@ export const InfoCard = styled.p`
   color: rgb(209, 21, 6);
   font-size: 1.2rem;
   
-  @media only screen and (min-width: 320px) and (max-width: 417px) {
+  @media (min-width: 320px) and (max-width: 417px) {
     font-weight: 800;
     font-size: 1rem;
   }
   
-  @media only screen and (min-width: 417px) and (max-width: 768px) {
+  @media (min-width: 417px) and (max-width: 768px) {
     font-weight: 800;
     font-size: 1rem;
 
@@ -115,7 +115,7 @@ export const CardPrice = styled.span`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  @media only screen and (min-width: 320px) and (max-width: 417px) {
+  @media (min-width: 320px) and (max-width: 417px) {
     font-weight: 800;
     font-size: 1rem;
   }

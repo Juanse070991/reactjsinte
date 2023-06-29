@@ -53,7 +53,6 @@ export const CategoriasWrapper = styled.section`
   }
   @media (min-width: 320px) and (max-width: 417px) {
     width:100%;
-    max-width: 320px;
     heigth: 100%;
     h2{
       font-size: 1.3rem;
@@ -62,7 +61,7 @@ export const CategoriasWrapper = styled.section`
   }
 
   @media (min-width: 417px) and (max-width: 768px) {
-    
+    width:100%;
     heigth: 100%;
     h2{
       font-size: 1.2rem;
@@ -72,6 +71,7 @@ export const CategoriasWrapper = styled.section`
 
   @media (min-width: 768px) and (max-width: 1024px) {
     heigth: 100%;
+    width: 100%;
     h2{
       font-size: 1.2rem;
       font-weigth: 800;
