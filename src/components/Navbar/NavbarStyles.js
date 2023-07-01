@@ -27,11 +27,10 @@ padding: 1rem 0rem;
 
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
-  justify-content: space-around;
+@media (min-width: 768px) and (max-width: 990px){
+  justify-content: space-between;
   width:100%;
-  margin: 0 auto;
-  padding:0px 0px;
+  max-width:1024px;
 }
 @media (min-width: 1024px) and (max-width: 1200px){
   justify-content: space-around;

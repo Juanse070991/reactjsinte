@@ -14,10 +14,8 @@ export const CheckoutDatosStyled = styled.div`
     }
   }
 
-    @media screen and (min-width: 481px) and (max-width: 767px){
-      max-width: 767px;
-      background-color:red;
-    
+    @media screen and (min-width: 417px) and (max-width: 768px){
+     
   }
   @media screen and (min-width: 768px) and (max-width: 1200px){
     

@@ -40,18 +40,18 @@ export const FooterContainerStyled = styled.footer`
     gap: 20px
   }
   @media (min-width: 1024px) and (max-width: 1200px){
-    max-width:1200px;
+    max-width: 1200px;
     background-color: black;
     flex-direction:row;
     height:100%;
     width:100%;
-    justify-content:space-between;
+    justify-content:center;
   }
 
   @media (min-width: 1200px) and (max-width: 1600px){
     max-width:1600px;
     background-color: black;
-    flex-direction:row;
+    flex-direction:column;
     height:100%;
     width:100%;
     justify-content:space-around;
@@ -76,31 +76,26 @@ export const LinksContainerStyled = styled.div`
     }
  
     @media (min-width: 417px) and (max-width: 768px){
-      background-color: white;
-      margin-right: 2rem;
+      margin-left: 2.5rem;
+      justify-content: left;
       width:100%;
-      max-width: 767px;
     }
 
     @media (min-width: 768px) and (max-width: 1024px){
-      background-color: white;
-      margin-right: 2rem;
+      justify-content:right;
+      flex-direction:column;
       width:100%;
-      max-width: 1024px;
     }
 
     @media (min-width: 1024px) and (max-width: 1200px){
-      background-color: white;
-      margin-right: 2rem;
-      width:100%;
-      max-width: 1200px;
+      
     }
 
     @media (min-width: 1200px) and (max-width: 1600px){
-      background-color: white;
-      margin-right: 2rem;
+     justify-content:center;
+     flex-direction:row;
       width:100%;
-      max-width: 1600px;
+      
     }
   
   `;
@@ -130,7 +125,7 @@ span{
     flex-direction:row;
     width:100%;
     align-item: center;
-    justify-content:space-around;
+    justify-content:left;
     span{
       flex-direction:row;
      }
@@ -142,6 +137,13 @@ span{
       justify-content:center;
       span{
         flex-direction:row;
+       }
+
+       @media (min-width: 1024px) and (max-width: 1200px){
+        flex-direction:row;
+        width:100%;
+        align-item: center;
+        justify-content:center;
        }
   
   @media (min-width: 1200px) and (max-width: 1600px){
@@ -178,6 +180,32 @@ span{
     }
   }
 
+  @media (min-width: 417px) and (max-width: 768px){
+    width:100%;
+    margin-left: 5rem;
+    align-item:center;
+    & img{
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px){
+    width:100%;
+    padding: 0px 10px;
+    align-item:center;
+    & img{
+      font-size: 1.1rem;
+    }
+  }
+   
+  @media (min-width: 1024px) and (max-width: 1200px){
+    width:100%;
+    padding: 0px 10px;
+    align-item:center;
+    & img{
+      font-size: 1.1rem;
+    }
+  }
 
   `;
   export const LogoContainer = styled.div ` 
@@ -187,7 +215,6 @@ span{
   align-item: center;
   & img,span{
     margin-top: 2px;
-    width:100%;
   }
 
   @media (min-width: 320px) and (max-width: 417px){
@@ -197,31 +224,39 @@ span{
     justify-content: center;
     align-item:center;
     & img{
-      font-size: 1.1rem;
+      width: 80px;
+      height:80px;
     }
+  }
 
     @media (min-width: 417px) and (max-width: 768px){
-      gap: 15px;
       width:100%;
-      margin-left:1.5rem;
       justify-content: center;
       align-item:center;
       & img{
-        font-size: 1.1rem;
-      }    
+        width: 120px;
+      height:90px;
+      } 
+      & p{
+        font-size: 1.2rem;
+        margin-rigth: 3rem;
+        padding:0px 2rem;
+      }
+    }    
 
     @media (min-width: 768px) and (max-width: 1024px){
-      background-color: red;
       width:100%;
       heigth: 100%;
-      
       justify-content: center;
       align-item:center;
       & img{
-       width:85px;
-       heigth:60px;
+       width:130px;
+       heigth:110px;
       }
-  
+      & p{
+        padding-right: 120px; 
+      }
+    }
   `;
 
 
