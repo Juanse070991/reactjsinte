@@ -74,6 +74,7 @@ export const LinksContainerStyled = styled.div`
       color:red;
       transition: 1.2s;
     }
+  }
  
     @media (min-width: 417px) and (max-width: 768px){
       margin-left: 2.5rem;
@@ -82,20 +83,25 @@ export const LinksContainerStyled = styled.div`
     }
 
     @media (min-width: 768px) and (max-width: 1024px){
-      justify-content:right;
-      flex-direction:column;
+      justify-content:left;
+      flex-direction:row;
+      margin: 10px 10px;
       width:100%;
     }
 
     @media (min-width: 1024px) and (max-width: 1200px){
-      
+      justify-content:left;
+      flex-direction:row;
+      margin: 10px 10px;
+      width:100%;
     }
 
     @media (min-width: 1200px) and (max-width: 1600px){
-     justify-content:center;
+     justify-content:left;
      flex-direction:row;
       width:100%;
-      
+      margin:20px 10px;
+      max-width:1600px;
     }
   
   `;
@@ -116,9 +122,7 @@ span{
     width:100%;
     align-item: center;
     justify-content:space-around;
-    span{
-      flex-direction:row;
-     }
+    
   }
 
   @media (min-width: 417px) and (max-width: 768px){
@@ -126,28 +130,28 @@ span{
     width:100%;
     align-item: center;
     justify-content:left;
-    span{
-      flex-direction:row;
-     }
+  }
 
      @media (min-width: 768px) and (max-width: 1024px){
       flex-direction:row;
       width:100%;
       align-item: center;
-      justify-content:center;
-      span{
-        flex-direction:row;
-       }
+      justify-content:left;
+      margin: 20px 10px;
+     }
 
        @media (min-width: 1024px) and (max-width: 1200px){
         flex-direction:row;
         width:100%;
         align-item: center;
-        justify-content:center;
+        justify-content:left;
+        margin: 20px 10px;
        }
   
   @media (min-width: 1200px) and (max-width: 1600px){
-   display: none;
+   display: flex;
+   justify-content: left;
+   margin:20px 20px;
   }
   
   `;
@@ -168,9 +172,9 @@ span{
   & p{
     display:flex;
     width: 100%;
-   
     height:100%;
   } 
+
   @media (min-width: 320px) and (max-width: 417px){
     width:100%;
     margin-left: 5rem;
@@ -207,7 +211,17 @@ span{
     }
   }
 
+  @media (min-width: 1200px) and (max-width: 1600px){
+    width:100%;
+    padding: 10px 10px;
+    align-item:center;
+    margin: 0px 20px;
+    & img{
+      font-size: 1.1rem;
+       }
+  }
   `;
+
   export const LogoContainer = styled.div ` 
   width:25%;
   display: flex;
@@ -255,6 +269,37 @@ span{
       }
       & p{
         padding-right: 120px; 
+      }
+    }
+
+    @media (min-width: 1024px) and (max-width: 1200px){
+      width:100%;
+      heigth: 100%;
+      justify-content: center;
+      align-item:center;
+      & img{
+       width:150px;
+       heigth:120px;
+      }
+      & p{
+        padding-right: 120px; 
+      }
+    }
+
+    @media (min-width: 1200px) and (max-width: 1600px){
+      width:100%;
+      heigth: 100%;
+      justify-content: center;
+      align-item:center;
+      & img{
+       width:150px;
+       heigth:120px;
+      }
+      & p{
+        padding-right: 120px;
+        margin-top: 110px;
+        font-size:1.5rem;
+        font-weight:600; 
       }
     }
   `;

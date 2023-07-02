@@ -74,6 +74,10 @@ export const GlobalStyles = createGlobalStyle`
     color: white;
     -webkit-tap-highlight-color: transparent;
     overflow-x: hidden 
+    @media screen and (min-width: 320px) and (max-width:417px){
+        width:100%;
+    }
+    }
     a {
     text-decoration: none;
     }
@@ -83,7 +87,7 @@ export const GlobalStyles = createGlobalStyle`
     li {
     list-style: none;
     }
-    @media screen and (min-width: 280px) and (max-width:480px){
+    @media screen and (min-width: 1024px) and (max-width:1200px){
         width:100%;
     }
 
